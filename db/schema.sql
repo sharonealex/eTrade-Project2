@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS eTrade_db;
+CREATE DATABASE eTrade_db;
