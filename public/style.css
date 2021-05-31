@@ -90,6 +90,14 @@ header {
     padding: 50px;
 }
 
+.background-image {
+    /* background: url('../image/shopping.jpeg') no-repeat center; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
 #container a {
     margin-right: 60px;
     color: var(--container-anchor);
@@ -107,6 +115,7 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -117,6 +126,7 @@ footer {
 }
 
 .navbar li a {
+    font-size: 20px;
     margin-left: 20px;
     text-decoration: none;
     color: var(--footer-anchor);
@@ -128,6 +138,40 @@ footer a:hover {
 }
 
 footer a {
+    font-size: 20px;
     margin-right: 100px;
+    text-decoration: none;
     color: var(--footer-anchor);
+}
+
+@media screen and (max-width: 1134px) {
+
+    .logo {
+        width: 200px;
+    }
+
+    .user-login {
+        font-size: 20px;
+    }
+
+    .search-txt {
+        width: 220px;
+    }
+
+    .navbar li a {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    footer a {
+        margin-right: 50px;
+        font-size: 15px;
+    }
+
+    #container a {
+        margin-right: 60px;
+        color: var(--container-anchor);
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
