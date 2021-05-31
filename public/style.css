@@ -28,6 +28,200 @@ header {
     align-items: center;
 }
 
+:root {
+    --btn-search-bg: #4295da;
+    --btn-search-bg-hov: #117fda;
+    --btn-search-bg-hv-col: #fff;
+    --btn-search-col: #f8f8f4;
+    --user-login-col: #328bdf;
+    --user-login-col-hv: #1266e4;
+    --container-anchor: #0d7979;
+    --container-anc-hv: #074d4d;
+    --footer-anchor: #574e4c;
+    --footer-anc-hv: #dc143c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow: hidden; */
+    width: 100%;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+.logo {
+    background: url('../image/eTrade_logo.png') no-repeat center;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.search-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    font-size: 1.3rem;
+    width: 500px;
+    height: 50px;
+    margin-right: 5px;
+    padding: 10px 8px;
+}
+
+.btn-search {
+    background-color: var(--btn-search-bg);
+    color: var(--btn-search-col);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    background-color: var(--btn-search-bg-hov);
+    color: var(--btn-search-bg-hv-col);
+}
+
+.user-login {
+    margin-right: 50px;
+    width: 200px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.user-login a {
+    text-decoration: none;
+    color: var(--user-login-col);
+}
+
+.user-login a:hover {
+    text-decoration: underline;
+    color: var(--user-login-col-hv);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.background-image {
+    /* background: url('../image/shopping.jpeg') no-repeat center; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+}
+
+#container a {
+    margin-right: 60px;
+    color: var(--container-anchor);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#container a:hover {
+    text-decoration: underline;
+    color: var(--container-anc-hv);
+}
+
+footer {
+    background-color: #79dbbe;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #797676;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar nav {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+
+.navbar li a {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--footer-anchor);
+}
+
+.navbar li a:hover,
+footer a:hover {
+    text-decoration: underline;
+    color: var(--footer-anc-hv);
+}
+
+footer a {
+    font-size: 1.5rem;
+    margin-right: 100px;
+    text-decoration: none;
+    color: var(--footer-anchor);
+}
+
+@media screen and (max-width: 1134px) {
+
+    .logo {
+        width: 200px;
+    }
+
+    .user-login {
+        font-size: 20px;
+    }
+
+    .search-txt {
+        width: 220px;
+    }
+
+    .navbar li a {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    footer a {
+        margin-right: 50px;
+        font-size: 15px;
+    }
+
+    #container a {
+        margin-right: 60px;
+        color: var(--container-anchor);
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
 
 .logo {
     background: url('../image/eTrade_logo.png') no-repeat center;
