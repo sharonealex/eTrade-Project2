@@ -1,3 +1,16 @@
+:root {
+    --btn-search-bg: #4295da;
+    --btn-search-bg-hov: #117fda;
+    --btn-search-bg-hv-col: #fff;
+    --btn-search-col: #3b3b39;
+    --user-login-col: #000;
+    --user-login-col-hv: #999;
+    --container-anchor: #0d7979;
+    --container-anc-hv: #074d4d;
+    --footer-anchor: #ff6347;
+    --footer-anc-hv: #dc143c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,8 +51,8 @@ header {
 }
 
 .btn-search {
-    background-color: #4295da;
-    color: #3b3b39;
+    background-color: var(--btn-search-bg);
+    color: var(-btn-search-col);
     font-size: 20px;
     width: 150px;
     height: 30px;
@@ -49,8 +62,8 @@ header {
 }
 
 .btn-search:hover {
-    background-color: #117fda;
-    color: #fff;
+    background-color: var(--btn-search-bg-hov);
+    color: var(--btn-search-bg-hv-col);
 }
 
 .user-login {
@@ -62,11 +75,11 @@ header {
 
 .user-login a {
     text-decoration: none;
-    color: black;
+    color: var(--user-login-col);
 }
 
 .user-login a:hover {
-    color: #999;
+    color: var(--user-login-col-hv);
 }
 
 #container {
@@ -79,14 +92,13 @@ header {
 
 #container a {
     margin-right: 60px;
-    color: #0d7979;
+    color: var(--container-anchor);
     font-size: 30px;
     text-decoration: none;
 }
 
 #container a:hover {
-    color: #074d4d;
-    ;
+    color: var(--container-anc-hv);
 }
 
 
@@ -107,15 +119,15 @@ footer {
 .navbar li a {
     margin-left: 20px;
     text-decoration: none;
-    color: tomato;
+    color: var(--footer-anchor);
 }
 
 .navbar li a:hover,
 footer a:hover {
-    color: crimson;
+    color: var(--footer-anc-hv);
 }
 
 footer a {
     margin-right: 100px;
-    color: tomato;
+    color: var(--footer-anchor);
 }
