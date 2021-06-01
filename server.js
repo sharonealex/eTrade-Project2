@@ -1,16 +1,25 @@
 const path = require("path");
 const express = require("express");
+// the module that was referenced in package.json was express-sessions
 const session = require("express-session");
 const exhbs = require("express-handlebars");
-const routes = require("/controllers");
+// the routes we called ./container and they were holding an empty file
+const routes = require("./routes");
+
+// TODO: CREATE THE PATH
+// please dont import modules or directories if they dont exist
 const helpers = require("./utils/helpers");
 
 const sequelize = require("./config/connection");
-const sequelizeStore = require("connect-session-sequelize");
+// the session.store wasnt there
+// when you're copying code, please make sure that you copy it with the understanding of what it does
+// missing something like this isn't a fun task to debug
+const sequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// if using handlebars helpers, please define the helper...
 const hbs = exhbs.create({ helpers });
 
 const sess = {
