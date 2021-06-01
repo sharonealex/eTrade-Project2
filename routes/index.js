@@ -1,7 +1,28 @@
 const router = require("express").Router();
+const userApi = require("./user");
 
-router.get("/", (req, res) => {
-  res.send("FIRST ROUTE");
+// building out the nested routes
+router.use("/", userApi);
+
+// common routes throughout the whole application
+router.get("/", () => {
+  res.render("all");
+});
+
+router.get("/about-us", (req, res) => {
+  res.render("about-us");
+});
+
+router.get("/contact-us", (req, res) => {
+  res.render("contact-us");
+});
+
+router.get("/legal", (req, res) => {
+  res.render("legal");
+});
+
+router.get("/customer-support", (req, res) => {
+  res.render("customer-support");
 });
 
 module.exports = router;
