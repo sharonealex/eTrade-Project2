@@ -2,41 +2,13 @@
     --btn-search-bg: #4295da;
     --btn-search-bg-hov: #117fda;
     --btn-search-bg-hv-col: #fff;
-    --btn-search-col: #3b3b39;
-    --user-login-col: #000;
-    --user-login-col-hv: #999;
-    --container-anchor: #0d7979;
-    --container-anc-hv: #074d4d;
-    --footer-anchor: #ff6347;
-    --footer-anc-hv: #dc143c;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-:root {
-    --btn-search-bg: #4295da;
-    --btn-search-bg-hov: #117fda;
-    --btn-search-bg-hv-col: #fff;
     --btn-search-col: #f8f8f4;
     --user-login-col: #328bdf;
     --user-login-col-hv: #1266e4;
     --container-anchor: #0d7979;
     --container-anc-hv: #074d4d;
+    --footer-bg: #79dbbe;
+    --footer-p: #797676;
     --footer-anchor: #574e4c;
     --footer-anc-hv: #dc143c;
 }
@@ -50,7 +22,7 @@ header {
 body {
     /* overflow: hidden; */
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 header {
@@ -122,10 +94,10 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 50px;
+    height: 80vh;
 }
 
 .background-image {
-    /* background: url('../image/shopping.jpeg') no-repeat center; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -145,7 +117,7 @@ header {
 }
 
 footer {
-    background-color: #79dbbe;
+    background-color: var(--footer-bg);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -160,7 +132,7 @@ footer {
 }
 
 footer p {
-    color: #797676;
+    color: var(--footer-p);
     text-align: center;
     margin-top: 20px;
 }
@@ -191,7 +163,13 @@ footer a {
     color: var(--footer-anchor);
 }
 
-@media screen and (max-width: 1134px) {
+@media screen and (max-width:1461px) {
+    .user-login a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
 
     .logo {
         width: 200px;
@@ -217,154 +195,6 @@ footer a {
 
     #container a {
         margin-right: 60px;
-        color: var(--container-anchor);
-        font-size: 20px;
-        text-decoration: none;
-    }
-}
-
-.logo {
-    background: url('../image/eTrade_logo.png') no-repeat center;
-    width: 300px;
-    height: 100px;
-    margin-top: 20px;
-}
-
-.text-search {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-txt {
-    width: 350px;
-    height: 30px;
-    margin-right: 10px;
-    padding: 10px 8px;
-}
-
-.btn-search {
-    background-color: var(--btn-search-bg);
-    color: var(-btn-search-col);
-    font-size: 20px;
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-
-.btn-search:hover {
-    background-color: var(--btn-search-bg-hov);
-    color: var(--btn-search-bg-hv-col);
-}
-
-.user-login {
-    margin-right: 30px;
-    width: 200px;
-    list-style: none;
-    font-size: 25px;
-}
-
-.user-login a {
-    text-decoration: none;
-    color: var(--user-login-col);
-}
-
-.user-login a:hover {
-    color: var(--user-login-col-hv);
-}
-
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-}
-
-.background-image {
-    /* background: url('../image/shopping.jpeg') no-repeat center; */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80vh;
-}
-
-#container a {
-    margin-right: 60px;
-    color: var(--container-anchor);
-    font-size: 30px;
-    text-decoration: none;
-}
-
-#container a:hover {
-    color: var(--container-anc-hv);
-}
-
-
-footer {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.navbar nav {
-    display: flex;
-    list-style: none;
-    padding: 20px;
-}
-
-.navbar li a {
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    color: var(--footer-anchor);
-}
-
-.navbar li a:hover,
-footer a:hover {
-    color: var(--footer-anc-hv);
-}
-
-footer a {
-    font-size: 20px;
-    margin-right: 100px;
-    text-decoration: none;
-    color: var(--footer-anchor);
-}
-
-@media screen and (max-width: 1134px) {
-
-    .logo {
-        width: 200px;
-    }
-
-    .user-login {
-        font-size: 20px;
-    }
-
-    .search-txt {
-        width: 220px;
-    }
-
-    .navbar li a {
-        font-size: 15px;
-        margin-left: 10px;
-    }
-
-    footer a {
-        margin-right: 50px;
-        font-size: 15px;
-    }
-
-    #container a {
-        margin-right: 60px;
-        color: var(--container-anchor);
         font-size: 20px;
         text-decoration: none;
     }
