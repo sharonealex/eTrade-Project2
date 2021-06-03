@@ -30,6 +30,7 @@ Order.init(
     sequelize,
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
+    freezeTableName : true,
     underscored: true,
     modelName: 'order'
   }

@@ -34,6 +34,7 @@ User.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
+    freezeTableName : true,
     modelName: 'user'
   }
 );
