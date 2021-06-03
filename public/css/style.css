@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 :root {
+    --body-bg: #f5f3f3;
     --btn-search-bg: #4295da;
     --btn-search-bg-hov: #117fda;
     --btn-search-bg-hv-col: #fff;
@@ -11,6 +14,8 @@
     --footer-p: #797676;
     --footer-anchor: #574e4c;
     --footer-anc-hv: #dc143c;
+    --clothes-border: #9fa7a7;
+    --clothes-caption: #2569c2;
 }
 
 * {
@@ -20,9 +25,11 @@
 }
 
 body {
-    /* overflow: hidden; */
+    overflow-y: hidden;
+    background-color: var(--body-bg);
     width: 100%;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -77,6 +84,12 @@ header {
     font-size: 20px;
 }
 
+.user-login a, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .user-login a {
     text-decoration: none;
     color: var(--user-login-col);
@@ -93,7 +106,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    height: 80vh;
+    height: 81vh;
 }
 
 .background-image {
@@ -108,7 +121,7 @@ header {
 }
 
 #container a {
-    margin-right: 60px;
+    /* margin-right: 60px; */
     color: var(--container-anchor);
     font-size: 30px;
     text-decoration: none;
@@ -137,6 +150,10 @@ header {
     justify-content: center;
     align-items: center;
     padding: 30px;
+}
+
+.clothing-link {
+    margin: 25px;
 }
 
 footer {
@@ -186,6 +203,115 @@ footer a {
     color: var(--footer-anchor);
 }
 
+/* *************** ABOUT US - CONTACT US - CUSTOMER SERVICE - LEGAL PAGE **************** */
+#main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 90vh;
+}
+
+.linked-page {
+    overflow: scroll;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 15px 10px 10px #999;
+    width: 70%;
+    padding: 30px;
+}
+
+.img-logo {
+    background: url('/image/eTrade_logo.png') no-repeat;
+    width: 160px;
+    height: 150px;
+}
+
+.linked-page-us {
+    padding: 30px 50px;
+}
+
+h1,
+p,
+h3 {
+    margin-bottom: 20px;
+}
+
+h1,
+h3 {
+    color: #747474;
+}
+
+p {
+    color: #413f3f;
+    line-height: 1.8;
+}
+
+.back-home {
+    padding-left: 50px;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #229e8e;
+}
+
+.back-home a:hover {
+    text-decoration: underline;
+    color: #066659;
+}
+
+/* *************** Mens, Women & Kids page ********** */
+
+
+#main-clothing-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.clothing-area {
+    overflow: scroll;
+    width: 65%;
+    height: 80%;
+    margin: auto;
+}
+
+.box-container {
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-rows: 300px;
+    padding: 50px;
+}
+
+.clothes-img {
+    width: 300px;
+    height: 280px;
+    border: 2px solid var(--clothes-border);
+}
+
+.grid-box {
+    margin: 10px;
+}
+
+.grid-box figcaption {
+    /* display: inline; */
+    color: var(--clothes-caption);
+    font-size: 12px;
+}
+
+.grid-box span {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* **** Media Screen ******/
+
 @media screen and (max-width:1400px) {
     .user-login a {
         font-size: 16px;
@@ -222,3 +348,4 @@ footer a {
         text-decoration: none;
     }
 }
+
