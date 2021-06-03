@@ -5,7 +5,7 @@ const User = require('./User');
 const Order = require('./Order');
 const Order_Item = require('./Order_Item');
 const Address = require('./Address');
-const Product_Cart = require('./ProductCart');
+const ProductCart = require('./ProductCart');
 const Cart = require('./Cart');
 
 
@@ -27,7 +27,6 @@ Category_Discount.belongsTo(Category, {
   foreignKey: 'discount_id',
 });
 
-
 Category.hasMany(Product, {
   foreignKey: 'category_id',
   onDelete: 'CASCADE',
@@ -36,7 +35,6 @@ Category.hasMany(Product, {
 Product.belongsTo(Category, {
   foreignKey: 'category_id',
 });
-
 
 User.hasMany(Order, {
   foreignKey: 'user_id',
@@ -74,24 +72,20 @@ Cart.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-
 Product.belongsToMany(Cart, {
   through: ProductCart,
   foreignKey: 'product_id'
 });
-
 
 Cart.hasMany(Product, {
   through: ProductCart,
   foreignKey: 'cart_id'
 });
 
-
-
-module.exports = { 
-  Address, 
+module.exports = {
+  Address,
   User,
-  Category, 
+  Category,
   Category_Discount,
   Cart,
   Product,
