@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for category.
-class Order_Item extends Model {}
+// Create a new Sequelize model for order items.
+class Order_Item extends Model { }
 
 Order_Item.init(
   {
@@ -13,12 +13,12 @@ Order_Item.init(
       autoIncrement: true,
     },
     order_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'order',
-          key: 'id',
-        },
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'order',
+        key: 'id',
       },
+    },
     product_id: {
       type: DataTypes.INTEGER
     },
@@ -32,7 +32,7 @@ Order_Item.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
-    freezeTableName : true,
+    freezeTableName: true,
     modelName: 'order_item'
   }
 );

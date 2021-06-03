@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for category.
-class ProductCart extends Model {}
+// Create a new Sequelize model for Product and Cart as a junction table.
+class ProductCart extends Model { }
 
 ProductCart.init(
   {
@@ -13,13 +13,13 @@ ProductCart.init(
       autoIncrement: true,
     },
     product_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'product',
-          key: 'id',
-        },
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'product',
+        key: 'id',
       },
-      cart_id: {
+    },
+    cart_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'cart',
@@ -32,7 +32,7 @@ ProductCart.init(
     sequelize,
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
-    freezeTableName : true,
+    freezeTableName: true,
     underscored: true,
     modelName: 'productCart'
   }
