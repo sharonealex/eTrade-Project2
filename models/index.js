@@ -47,6 +47,33 @@ Order.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
+User.hasMany(Order, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+
+Order.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+Order.hasMany(Order_Item, {
+  foreignKey: 'order_id',
+  onDelete: 'CASCADE',
+});
+
+Order_Item.belongsTo(Order, {
+  foreignKey: 'order_id',
+});
+
+User.hasOne(Cart, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+
+Cart.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
 
 
 module.exports = { Address, User, Category, Category_Discount };
