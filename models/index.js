@@ -18,5 +18,26 @@ Address.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-module.exports = { Address, User };
+Category.hasOne(Category_Discount, {
+  foreignKey: 'discount_id',
+  onDelete: 'CASCADE',
+});
+
+Category_Discount.belongsTo(Category, {
+  foreignKey: 'discount_id',
+});
+
+
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE',
+});
+
+Product.belongsTo(Category, {
+  foreignKey: 'category_id',
+});
+
+
+
+module.exports = { Address, User, Category, Category_Discount };
 
