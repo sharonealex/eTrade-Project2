@@ -19,7 +19,7 @@ Product.init(
       type: DataTypes.STRING
     },
     price: {
-      type: DataTypes.INTEGER
+      type: DataTypes.DECIMAL(10,2)
     },
     currency: {
       type: DataTypes.STRING,

@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Jeans",
+        "description": "Jeans",
+        "price": 69.99,
+        "image": "/image/mens-jeans.png",
+        "stock": true,
+        "category_id": 2
+
+    },
+
+]
