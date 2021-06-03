@@ -13,6 +13,8 @@ const user = require('./models/User');
 const order = require('./models/Order');
 const order_item = require('./models/Order_Item');
 const address = require('./models/Address');
+const product_cart = require('./models/Product_Cart');
+const cart = require('./models/Cart');
 
 
 // TODO: CREATE THE PATH

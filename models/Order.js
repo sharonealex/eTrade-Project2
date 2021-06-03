@@ -23,10 +23,7 @@ Order.init(
     },
     total_quantity: {
         type: DataTypes.STRING
-      },
-      phone_number: {
-        type: DataTypes.INTEGER
-      },
+      }
   },
   {
     // Link to database connection
