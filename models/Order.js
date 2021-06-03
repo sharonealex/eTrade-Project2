@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for category.
-class User extends Model {}
+class Order extends Model {}
 
-User.init(
+Order.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,16 +12,16 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
+    user_id: {
         type: DataTypes.STRING
       },
-    password: {
+    date_placed: {
       type: DataTypes.STRING
     },
-    first_name: {
+    total_price: {
       type: DataTypes.STRING
     },
-    last_name: {
+    total_quantity: {
         type: DataTypes.STRING
       },
       phone_number: {
@@ -34,8 +34,8 @@ User.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
-    modelName: 'user'
+    modelName: 'order'
   }
 );
 
-module.exports = User;
+module.exports = Order;
