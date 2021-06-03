@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for category.
-class Address extends Model {}
+// Create a new Sequelize model for Address.
+class Address extends Model { }
 
 Address.init(
   {
@@ -13,12 +13,12 @@ Address.init(
       autoIncrement: true,
     },
     user_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'user',
-            key: 'id',
-          },
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
       },
+    },
     address_line1: {
       type: DataTypes.STRING
     },
@@ -26,11 +26,11 @@ Address.init(
       type: DataTypes.STRING
     },
     city: {
-        type: DataTypes.STRING
-      },
-      postal_code: {
-        type: DataTypes.INTEGER
-      },
+      type: DataTypes.STRING
+    },
+    postal_code: {
+      type: DataTypes.INTEGER
+    },
   },
   {
     // Link to database connection
@@ -38,7 +38,7 @@ Address.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
-    freezeTableName : true,
+    freezeTableName: true,
     modelName: 'address'
   }
 );
