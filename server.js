@@ -10,7 +10,9 @@ const category_discount = require('./models/Category_Discount');
 const category = require('./models/Category');
 const product = require('./models/Product');
 const user = require('./models/User');
-const order = require('./models/Order')
+const order = require('./models/Order');
+const order_item = require('./models/Order_Item');
+const address = require('./models/Address');
 
 
 // TODO: CREATE THE PATH
