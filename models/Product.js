@@ -21,6 +21,16 @@ Product.init(
     price: {
       type: DataTypes.INTEGER
     },
+    currency: {
+      type: DataTypes.STRING,
+      defaultValue: "AU$",
+    },
+    image: {
+      type: DataTypes.STRING
+    },
+    stock: {
+      type: DataTypes.BOOLEAN
+    },
     category_id: {
         type: DataTypes.STRING
       },
