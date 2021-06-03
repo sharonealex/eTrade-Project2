@@ -25,4 +25,16 @@ router.get("/customer-support", (req, res) => {
   res.render("customer-support");
 });
 
+router.get("/mens", (req, res) => {
+    res.render("mens");
+});
+
+router.get("/womens", (req, res) => {
+    res.render("womens");
+});
+
+router.get("/kids", (req, res) => {
+    res.render("kids");
+});
+
 module.exports = router;
