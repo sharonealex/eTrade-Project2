@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for category.
-class Product_Cart extends Model {}
+class ProductCart extends Model {}
 
-Product_Cart.init(
+ProductCart.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,10 +13,18 @@ Product_Cart.init(
       autoIncrement: true,
     },
     product_id: {
-        type: DataTypes.STRING
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'product',
+          key: 'id',
+        },
       },
       cart_id: {
-      type: DataTypes.STRING
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'cart',
+        key: 'id',
+      },
     }
   },
   {
@@ -26,8 +34,8 @@ Product_Cart.init(
     timestamps: false,
     freezeTableName : true,
     underscored: true,
-    modelName: 'product_cart'
+    modelName: 'productCart'
   }
 );
 
-module.exports = Product_Cart;
+module.exports = ProductCart;
