@@ -38,6 +38,16 @@ Product.belongsTo(Category, {
 });
 
 
+User.hasMany(Order, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+
+Order.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+
 
 module.exports = { Address, User, Category, Category_Discount };
 
