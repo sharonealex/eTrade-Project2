@@ -7,7 +7,293 @@
         "image": "/image/mens-jeans.png",
         "stock": true,
         "category_id": 2
-
     },
-
+    {
+        "id": 2,
+        "name": "Jumper",
+        "description": "Jumper",
+        "price": 89.99,
+        "image": "/image/mens-jumper.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 3,
+        "name": "Sweater",
+        "description": "Sweater",
+        "price": 79.99,
+        "image": "/image/mens-jumper2.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 4,
+        "name": "Short sleeves shirt",
+        "description": "Short sleeves shirt",
+        "price": 65.99,
+        "image": "/image/mens-short-sleeve-shirt.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 5,
+        "name": "T-shirt long sleeve",
+        "description": "T-shirt long sleeve",
+        "price": 45.99,
+        "image": "/image/mens-tshirt.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "name": "Shorts",
+        "description": "Shorts",
+        "price": 45.99,
+        "image": "/image/mens-shorts.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 7,
+        "name": "Singlets",
+        "description": "Singlets",
+        "price": 25.99,
+        "image": "/image/mens-singlets.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 8,
+        "name": "T-shirt",
+        "description": "T-shirt",
+        "price": 20.99,
+        "image": "/image/mens-tshirt2.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 9,
+        "name": "Casual pants",
+        "description": "Casual pants",
+        "price": 36.99,
+        "image": "/image/mens-casual-pants.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 10,
+        "name": "Waterproof jacket",
+        "description": "Waterproof jacket",
+        "price": 75.99,
+        "image": "/image/mens-jacket.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 11,
+        "name": "Cargo pants",
+        "description": "Cargo pants",
+        "price": 45.99,
+        "image": "/image/mens-cargo.png",
+        "stock": true,
+        "category_id": 2
+    },
+    {
+        "id": 12,
+        "name": "Blazer",
+        "description": "Blazer",
+        "price": 78.99,
+        "image": "/image/womens-blazer.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 13,
+        "name": "Shorts",
+        "description": "Shorts",
+        "price": 35.99,
+        "image": "/image/womens-shorts.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 14,
+        "name": "Top leopard",
+        "description": "Top leopard",
+        "price": 35.99,
+        "image": "/image/womens-top-leopard.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 15,
+        "name": "T-shirt",
+        "description": "T-shirt",
+        "price": 35.99,
+        "image": "/image/womens-tshirt.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 16,
+        "name": "Dress",
+        "description": "Dress",
+        "price": 34.99,
+        "image": "/image/womens-dress.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 17,
+        "name": "Dress floral",
+        "description": "Dress floral",
+        "price": 50.99,
+        "image": "/image/womens-dress-floral.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 18,
+        "name": "Cami top & skirt",
+        "description": "Cami top & skirt",
+        "price": 68.99,
+        "image": "/image/womens-camitop-skirt.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 19,
+        "name": "Tee front twist",
+        "description": "Tee front twist",
+        "price": 36.99,
+        "image": "/image/womens-tee-twist.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 20,
+        "name": "Jumper",
+        "description": "Jumper",
+        "price": 79.99,
+        "image": "/image/womens-knitwear.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 21,
+        "name": "Jeans",
+        "description": "Jeans",
+        "price": 56.99,
+        "image": "/image/womens-jeans.png",
+        "stock": true,
+        "category_id": 1
+    },
+    {
+        "id": 21,
+        "name": "Girls sweater and dress",
+        "description": "Girls sweater and dress",
+        "price": 39.99,
+        "image": "/image/womens-jeans.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 22,
+        "name": "Jeans unisex ",
+        "description": "Jeans unisex ",
+        "price": 55.99,
+        "image": "/image/kids-jeans.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 23,
+        "name": "Girls Pjs",
+        "description": "Girls Pjs",
+        "price": 29.99,
+        "image": "/image/kids-pjs.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 24,
+        "name": "Girls jacket",
+        "description": "Girls jacket",
+        "price": 65.99,
+        "image": "/image/kids-jacket.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 25,
+        "name": "Girls fancy dress",
+        "description": "Girls fancy dress",
+        "price": 65.99,
+        "image": "/image/kids-fancy-dress.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 26,
+        "name": "Girls jumper",
+        "description": "Girls jumper",
+        "price": 28.99,
+        "image": "/image/kids-jumper.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 27,
+        "name": "Boys track pants",
+        "description": "Boys track pants",
+        "price": 31.99,
+        "image": "/image/kids-trackpants-b.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 28,
+        "name": "Boys jumper",
+        "description": "Boys jumper",
+        "price": 36.99,
+        "image": "/image/kids-jumper-b.png",
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 28,
+        "name": "Boys jacket",
+        "description": "Boys jacket",
+        "price": 56.99,
+        "image": "/image/kids-jacket-b.png" ,
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 29,
+        "name": "Boys t-shirt",
+        "description": "Boys t-shirt",
+        "price": 36.99,
+        "image": "/image/kids-tshirt-b.png" ,
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 30,
+        "name": "Boys cargo pants",
+        "description": "Boys cargo pants",
+        "price": 42.99,
+        "image": "/image/kids-cargo-b.png" ,
+        "stock": true,
+        "category_id": 3
+    },
+    {
+        "id": 31,
+        "name": "Boys sweaters",
+        "description": "Boys sweaters",
+        "price": 39.99,
+        "image": "/image/kids-sweat-b.png" ,
+        "stock": true,
+        "category_id": 3
+    }
 ]
