@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for category.
-class Order extends Model {}
+// Create a new Sequelize model for Order.
+class Order extends Model { }
 
 Order.init(
   {
@@ -13,8 +13,12 @@ Order.init(
       autoIncrement: true,
     },
     user_id: {
-        type: DataTypes.STRING
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
       },
+    },
     date_placed: {
       type: DataTypes.STRING
     },
@@ -22,15 +26,15 @@ Order.init(
       type: DataTypes.STRING
     },
     total_quantity: {
-        type: DataTypes.STRING
-      }
+      type: DataTypes.STRING
+    }
   },
   {
     // Link to database connection
     sequelize,
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
-    freezeTableName : true,
+    freezeTableName: true,
     underscored: true,
     modelName: 'order'
   }

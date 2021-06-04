@@ -2,11 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for discounts offered on category.
-class Category_Discount extends Model {}
+class Category_Discount extends Model { }
 
-Category_Discount.init(
-
-  {
+Category_Discount.init({
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -32,7 +30,7 @@ Category_Discount.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
-    freezeTableName : true,
+    freezeTableName: true,
     modelName: 'category_discount'
   }
 );
