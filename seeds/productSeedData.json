@@ -189,7 +189,7 @@
         "category_id": 1
     },
     {
-        "id": 21,
+        "id": 22,
         "name": "Girls sweater and dress",
         "description": "Girls sweater and dress",
         "price": 39.99,
@@ -198,7 +198,7 @@
         "category_id": 3
     },
     {
-        "id": 22,
+        "id": 23,
         "name": "Jeans unisex ",
         "description": "Jeans unisex ",
         "price": 55.99,
@@ -207,7 +207,7 @@
         "category_id": 3
     },
     {
-        "id": 23,
+        "id": 24,
         "name": "Girls Pjs",
         "description": "Girls Pjs",
         "price": 29.99,
@@ -216,7 +216,7 @@
         "category_id": 3
     },
     {
-        "id": 24,
+        "id": 25,
         "name": "Girls jacket",
         "description": "Girls jacket",
         "price": 65.99,
@@ -225,7 +225,7 @@
         "category_id": 3
     },
     {
-        "id": 25,
+        "id": 26,
         "name": "Girls fancy dress",
         "description": "Girls fancy dress",
         "price": 65.99,
@@ -234,7 +234,7 @@
         "category_id": 3
     },
     {
-        "id": 26,
+        "id": 27,
         "name": "Girls jumper",
         "description": "Girls jumper",
         "price": 28.99,
@@ -243,7 +243,7 @@
         "category_id": 3
     },
     {
-        "id": 27,
+        "id": 28,
         "name": "Boys track pants",
         "description": "Boys track pants",
         "price": 31.99,
@@ -252,7 +252,7 @@
         "category_id": 3
     },
     {
-        "id": 28,
+        "id": 29,
         "name": "Boys jumper",
         "description": "Boys jumper",
         "price": 36.99,
@@ -261,7 +261,7 @@
         "category_id": 3
     },
     {
-        "id": 28,
+        "id": 30,
         "name": "Boys jacket",
         "description": "Boys jacket",
         "price": 56.99,
@@ -270,7 +270,7 @@
         "category_id": 3
     },
     {
-        "id": 29,
+        "id": 31,
         "name": "Boys t-shirt",
         "description": "Boys t-shirt",
         "price": 36.99,
@@ -279,7 +279,7 @@
         "category_id": 3
     },
     {
-        "id": 30,
+        "id": 32,
         "name": "Boys cargo pants",
         "description": "Boys cargo pants",
         "price": 42.99,
@@ -288,7 +288,7 @@
         "category_id": 3
     },
     {
-        "id": 31,
+        "id": 33,
         "name": "Boys sweaters",
         "description": "Boys sweaters",
         "price": 39.99,
