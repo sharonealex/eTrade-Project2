@@ -10,10 +10,13 @@ const categoryDiscountSeedData = require('./categoryDiscountSeedData.json')
 const seedDatabase = async()=>{
 
     await sequelize.sync({force: true});
-
+    console.log('\n----- DATABASE SYNCED -----\n');
     await Category_Discount.bulkCreate(categoryDiscountSeedData);
+    console.log('\n----- DISCOUNT TABLE SEEDED -----\n');
     await Category.bulkCreate(categorySeedData);
+    console.log('\n----- CATEGORY TABLE SEEDED -----\n');
     await Product.bulkCreate(productSeedData);
+    console.log('\n----- PRODUCT TABLE SEEDED -----\n');
     
     process.exit(0);
 }
