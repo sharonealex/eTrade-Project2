@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Summer Sale",
+        "duration_weeks": 4,
+        "discount_percent": 40,
+        "active": false
+    },
+    {
+        "id": 2,
+        "name": "Winter Sale",
+        "duration_weeks": 6,
+        "discount_percent": 35,
+        "active": true
+    },
+    {
+        "id": 3,
+        "name": "Spring Sale",
+        "duration_weeks": 4,
+        "discount_percent": 25,
+        "active": true
+    }
+
+]
