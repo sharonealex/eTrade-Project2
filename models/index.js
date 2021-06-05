@@ -18,13 +18,12 @@ Address.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-Category.hasOne(Category_Discount, {
+Category_Discount.hasMany(Category, {
+  foreignKey: 'discount_id',
+});
+Category.belongsTo(Category_Discount, {
   foreignKey: 'discount_id',
   onDelete: 'CASCADE',
-});
-
-Category_Discount.belongsTo(Category, {
-  foreignKey: 'discount_id',
 });
 
 Category.hasMany(Product, {
