@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Womens Clothing",
+        "description": "All clothing in the womens section",
+        "discount_id": 1
+    },
+    {
+        
+        "id": 2,
+        "name": "Mens Clothing",
+        "description": "All clothing in the mens section",
+        "discount_id": null
+
+    },
+    {
+        "id": 3,
+        "name": "Kids Clothing",
+        "description": "All clothing in the kids section",
+        "discount_id": 3
+    }
+]

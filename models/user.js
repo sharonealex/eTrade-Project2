@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Create a new Sequelize model for category.
-class User extends Model {}
+// Create a new Sequelize model for User.
+class User extends Model { }
 
 User.init(
   {
@@ -13,8 +13,8 @@ User.init(
       autoIncrement: true,
     },
     username: {
-        type: DataTypes.STRING
-      },
+      type: DataTypes.STRING
+    },
     password: {
       type: DataTypes.STRING
     },
@@ -22,11 +22,11 @@ User.init(
       type: DataTypes.STRING
     },
     last_name: {
-        type: DataTypes.STRING
-      },
-      phone_number: {
-        type: DataTypes.INTEGER
-      },
+      type: DataTypes.STRING
+    },
+    phone_number: {
+      type: DataTypes.INTEGER
+    },
   },
   {
     // Link to database connection
@@ -34,7 +34,7 @@ User.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
-    freezeTableName : true,
+    freezeTableName: true,
     modelName: 'user'
   }
 );
