@@ -1,8 +1,10 @@
 const router = require("express").Router();
 const userApi = require("./user");
 
+
 // building out the nested routes
 router.use("/", userApi);
+//router.use('/api', apiRoutes);
 
 // common routes throughout the whole application
 router.get("/", () => {
