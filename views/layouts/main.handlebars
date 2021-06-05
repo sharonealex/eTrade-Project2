@@ -11,12 +11,13 @@
 
 <body>
     <header>
-        <div class="logo"></div>
+        <section class="logo"></section>
 
-        <div class="search-area">
-            {{!-- <input class="search-txt" type="search"> --}}
+        <section class="search-area">
+            
             <select name="clothing" id="clothing" class="search-txt">
                 <optgroup label="Mens Selection...">
+                    <option value="default" selected>Please select your item...</option>
                     <option value="default">Jeans</option>
                     <option value="default">Jumper</option>
                     <option value="default">Sweater</option>
@@ -66,38 +67,44 @@
             
             <button class="btn-search" value="submit">Search</button>
 
-        </div>
-        <div class="user-login">
+        </section>
+        <section class="user-login">
             <li>
                 {{#if loggedIn}}
                 <button id="logout" >Logout</button>
                 {{else}}
                 <a href="/login">Sign in</a><span> or </span>
-                <a href="/signUp">register</a>
+                <a href="/register">register</a>
                 {{/if}}
             </li>
-        </div>
+        </section>
     </header>
-    {{{ body }}}
+    <main id="content-wrap">
+         {{{ body }}}
 
-    <footer>
-        <div class="footer-link">
-            <div class="navbar">
+    </main>
+   
+
+    <footer id="footer">
+        <section class="footer-link">
+            <section class="navbar">
                 <nav>
                     <li><a href="/about-us">About Us</a></li>
                     <li><a href="/contact-us">Contact Us</a></li>
                     <li><a href="/customer-support">Customer Support</a></li>
                     <li><a href="/legal">Legal</a></li>
                 </nav>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <a class="track-order" href="/track-order">Track My Order</a>
-            </div>
-        </div>
+            </section>
+        </section>
 
         <p>copyright &copy; 2021 </p>
     </footer>
+
+    <script src="/script/app.js"></script>
 </body>
 
 </html>
