@@ -27,20 +27,20 @@ router.get("/customer-support", (req, res) => {
   res.render("customer-support");
 });
 
-router.get("/mens", (req, res) => {
-    res.render("mens");
-});
-
-router.get("/womens", (req, res) => {
-    res.render("womens");
-});
-
-router.get("/kids", (req, res) => {
-    res.render("kids");
-});
-
 router.get("/track-order", (req, res) => {
     res.render("track-order");
+});
+
+router.get('/mens', (req, res) => {
+  res.render("mens");
+});
+
+router.get('/womens', (req, res) => {
+  res.render('womens');
+});
+
+router.get('/kids', (req, res) => {
+  res.render("kids");
 });
 
 router.get("/login", (req, res) =>{
@@ -50,5 +50,14 @@ router.get("/login", (req, res) =>{
     }
     res.render('login');
 });
+
+router.get("/register", (req, res) => {
+    res.render("register");
+});
+
+router.get("/clothing-details", (req, res) => {
+    res.render('clothing-details');
+});
+
 
 module.exports = router;
