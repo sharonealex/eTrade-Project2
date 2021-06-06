@@ -1,15 +1,17 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
-    const email = document.querySelector('#username').value.trim();
+    const username = document.querySelector('#username').value.trim();
     const password = document.querySelector('#password').value.trim();
   
     if (username && password) {
-      const response = await fetch('/eTrade/login', {
+      const response = await fetch('/eTrade/api/users', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
         headers: { 'Content-Type': 'application/json' },
       });
+
+    //   console.log(response)
   
       if (response.ok) {
         document.location.replace('/eTrade');
@@ -24,19 +26,21 @@ const loginFormHandler = async (event) => {
   
     const username = document.querySelector('#username').value.trim();
     const password = document.querySelector('#password').value.trim();
-    const firstname = document.querySelector('#firstname').value.trim();
-    const lastname = document.querySelector('#lastname').value.trim();
-    const phone = document.querySelector('#phone').value.trim();
+    const first_name = document.querySelector('#firstname').value.trim();
+    const last_name = document.querySelector('#lastname').value.trim();
+    const phone_number = document.querySelector('#phone').value.trim();
   
-    if (username && password && firstname && lastname && phone) {
+    if (username && password && first_name && last_name && phone_number) {
       const response = await fetch('/eTrade/api/users', {
         method: 'POST',
-        body: JSON.stringify({ username, password, firstname, lastname, phone }),
+        body: JSON.stringify({ username, password, first_name, last_name, phone_number }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
         document.location.replace('/eTrade');
+
+        console.log(response);
       } else {
         alert('Failed to sign up.');
       }
@@ -45,9 +49,10 @@ const loginFormHandler = async (event) => {
   
   document
     .querySelector('#register-form')
-    .addEventListener('submit', loginFormHandler);
+    .addEventListener('submit', signupFormHandler);
+
   
   document
     .querySelector('#login-form')
-    .addEventListener('submit', signupFormHandler);
+    .addEventListener('submit', loginFormHandler);
   

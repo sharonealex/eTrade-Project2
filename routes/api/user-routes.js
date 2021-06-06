@@ -40,41 +40,41 @@ router.post('/', async (req, res) => {
 
 // //login
 
-// router.post('/', async (req, res) => {
-//     try{
-//         const userLogin = await user.findOne({
-//             where: {
-//                 username: req.body.user,
-//             },
-//         });
+router.post('/', async (req, res) => {
+    try{
+        const userLogin = await user.findOne({
+            where: {
+                username: req.body.user,
+            },
+        });
 
-//         if(!userLogin || userLogin === '') {
-//             res.status(400).json({message: "incorrect username, please enter a username to continue!!!"});
+        if(!userLogin || userLogin === '') {
+            res.status(400).json({message: "incorrect username, please enter a username to continue!!!"});
 
-//             return;
-//         }
+            return;
+        }
 
-//         req.session.save(() => {
-//             req.session.loggedIn = true;
+        req.session.save(() => {
+            req.session.loggedIn = true;
 
-//             res.status(200).json({ user: userLogin, message: "Ypou are now logged in!"});
-//         })
+            res.status(200).json({ user: userLogin, message: "Ypou are now logged in!"});
+        })
 
-//     } catch(err) {
-//         res.status(500).json(err);
-//     }
-// });
+    } catch(err) {
+        res.status(500).json(err);
+    }
+});
 
-// //Log out
+//Log out
 
-// router.post('/logout', (req, res) => {
-//     if (req.session.loggedIn) {
-//         req.session.destroy(() => {
-//             res.status(204).end();
-//         });
-//     } else {
-//         res.status(404).end();
-//     }
-// });
+router.post('/eTrade/logout', (req, res) => {
+    if (req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    } else {
+        res.status(404).end();
+    }
+});
 
 module.exports = router;
