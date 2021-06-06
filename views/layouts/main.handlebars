@@ -10,76 +10,10 @@
 </head>
 
 <body>
-    <header>
-        <a href="/eTrade" id="logo"><img src="../image/eTrade_logo.png" alt="eTrade logo" height="250px" width="250px"></a>
-        {{!-- <section class="logo"></section> --}}
-
-        <section class="search-area">
-            
-            <select name="clothing" id="clothing" class="search-txt" size="1">
-                <optgroup label="Mens Selection...">
-                    <option value="default" selected>Please select your item...</option>
-                    <option value="default">Jeans</option>
-                    <option value="default">Jumper</option>
-                    <option value="default">Sweater</option>
-                    <option value="default">Long sleeve shirt</option>
-                    <option value="default">T-shirt long sleeve</option>
-                    <option value="default">Shorts</option>
-                    <option value="default">Singlets</option>
-                    <option value="default">T-shirt</option>
-                    <option value="default">Casual pants</option>
-                    <option value="default">Waterproof jacket</option>
-                    <option value="default">Cargo pants</option>
-                </optgroup>
-
-                <optgroup label="Women Selection...">
-                    <option value="default">Jeans</option>
-                    <option value="default">Jumper</option>
-                    <option value="default">Sweat-shirt</option>
-                    <option value="default">Tee front twist</option>
-                    <option value="default">Cami top & skirt</option>
-                    <option value="default">Dress floral</option>
-                    <option value="default">Dress</option>
-                    <option value="default">Sweater vest</option>
-                    <option value="default">T-shirt</option>
-                    <option value="default">Top leopard</option>
-                    <option value="default">Shorts</option>
-                    <option value="default">Blazer</option>
-                </optgroup>
-
-                <optgroup label="Girls Selection...">
-                    <option value="default">Girls sweater and dress</option>
-                    <option value="default">Jeans</option>
-                    <option value="default">Girls Pjs</option>
-                    <option value="default">Girls jacket</option>
-                    <option value="default">Girls fancy dress</option>
-                    <option value="default">Girls jumper</option>
-                </optgroup>
-
-                <optgroup label="Boys Selection...">
-                    <option value="default">Boys track pants</option>
-                    <option value="default">Boys jumper </option>
-                    <option value="default">Boys t-shirt</option>
-                    <option value="default">Boys jacket</option>
-                    <option value="default">Boys cargo pants</option>
-                    <option value="default">Boys sweaters</option>
-                </optgroup>
-            </select>
-            
-            <button class="btn-search" value="submit">Search</button>
-
-        </section>
-        <section class="user-login">
-            <li>
-                {{#if loggedIn}}
-                <button id="logout" >Logout</button>
-                {{else}}
-                <a href="/eTrade/login">Sign in</a><span> or </span>
-                <a href="/eTrade/register">register</a>
-                {{/if}}
-            </li>
-        </section>
-    </header>
+ <header class="header">
+     <section class="logo"></section>
+ </header>
+    
     <main id="content-wrap">
          {{{ body }}}
 
@@ -104,6 +38,9 @@
 
         <p>copyright &copy; 2021 </p>
     </footer>
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 
     <script src="/script/app.js"></script>
 </body>
