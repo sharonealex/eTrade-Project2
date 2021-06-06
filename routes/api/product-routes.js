@@ -9,23 +9,14 @@ const { Product, Category } = require('../../models')
 
 
 //Fetches all the Products with associated Category and applicable Discounts.
-router.get('/', (request, response) => {
-    Product.findAll(
-        {
-        attributes: ['id', 'name', 'description', 'price', 'image', 'stock'],
-        include: [
-            {
-                model: Category,
-                attributes: ['name']
-            }
-        ]
-    }
-    )
-        .then(products => response.json(products))
-        .catch(err => {
-            console.log(err);
-            response.status(500).json(err);
-        });
+
+router.get('/', async (req, res) => {
+  try {
+    const products = await Product.findAll();
+    res.status(200).json(products);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
