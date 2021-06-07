@@ -1,110 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eTrade-Project</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
 
-<body>
-    <header>
-        <section class="logo"></section>
-
-        <section class="search-area">
-            
-            <select name="clothing" id="clothing" class="search-txt">
-                <optgroup label="Mens Selection...">
-                    <option value="default" selected>Please select your item...</option>
-                    <option value="default">Jeans</option>
-                    <option value="default">Jumper</option>
-                    <option value="default">Sweater</option>
-                    <option value="default">Long sleeve shirt</option>
-                    <option value="default">T-shirt long sleeve</option>
-                    <option value="default">Shorts</option>
-                    <option value="default">Singlets</option>
-                    <option value="default">T-shirt</option>
-                    <option value="default">Casual pants</option>
-                    <option value="default">Waterproof jacket</option>
-                    <option value="default">Cargo pants</option>
-                </optgroup>
-
-                <optgroup label="Women Selection...">
-                    <option value="default">Jeans</option>
-                    <option value="default">Jumper</option>
-                    <option value="default">Sweat-shirt</option>
-                    <option value="default">Tee front twist</option>
-                    <option value="default">Cami top & skirt</option>
-                    <option value="default">Dress floral</option>
-                    <option value="default">Dress</option>
-                    <option value="default">Sweater vest</option>
-                    <option value="default">T-shirt</option>
-                    <option value="default">Top leopard</option>
-                    <option value="default">Shorts</option>
-                    <option value="default">Blazer</option>
-                </optgroup>
-
-                <optgroup label="Girls Selection...">
-                    <option value="default">Girls sweater and dress</option>
-                    <option value="default">Jeans</option>
-                    <option value="default">Girls Pjs</option>
-                    <option value="default">Girls jacket</option>
-                    <option value="default">Girls fancy dress</option>
-                    <option value="default">Girls jumper</option>
-                </optgroup>
-
-                <optgroup label="Boys Selection...">
-                    <option value="default">Boys track pants</option>
-                    <option value="default">Boys jumper </option>
-                    <option value="default">Boys t-shirt</option>
-                    <option value="default">Boys jacket</option>
-                    <option value="default">Boys cargo pants</option>
-                    <option value="default">Boys sweaters</option>
-                </optgroup>
-            </select>
-            
-            <button class="btn-search" value="submit">Search</button>
-
+  <body>
+    <div class="header">
+      <section class="container">
+        <section class="navbar">
+          <section class="logo">
+            <img src="" width="125px" />
+          </section>
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img
+            src="image/shopping-cart.png"
+            width="30px"
+            height="30px"
+            alt="shopping cart icon"
+          />
         </section>
-        <section class="user-login">
-            <li>
-                {{#if loggedIn}}
-                <button id="logout" >Logout</button>
-                {{else}}
-                <a href="/login">Sign in</a><span> or </span>
-                <a href="/register">register</a>
-                {{/if}}
-            </li>
-        </section>
-    </header>
-    <main id="content-wrap">
-         {{{ body }}}
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              The Best Place To <br />
+              Buy Online!
+            </h1>
+            <p>
+              Sucess is not always about greatness. It is about consistency.
+              Consistent<br />hard work gains sucess. Greatness will come.
+            </p>
+            <a href="" class="btn">Sign Up &#10174;</a>
+          </div>
+          <div class="col-2">
+            <img src="/image/Slider.jpeg" />
+          </div>
+        </div>
+      </section>
+    </div>
 
-    </main>
+    <!--Featured Categories-->
+
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="image/model-1.jpeg" alt="female-model" />
+          </div>
+          <div class="col-3">
+            <img src="image/Model-4.jpeg" alt="male-model" />
+          </div>
+          <div class="col-3">
+            <img src="image/model-3.png" alt="boy-model" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Featured Products-->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="image/mens-jumper.png" width="230px" height="300px" alt="navy-blue-jumper" />
+          <h4>Navy Blue Jumper</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$70.00</p>
+        </div>
+        <div class="col-4">
+         <img src="image/Women_dress.png" width="200px" height="300px" alt="navy-blue-jumper" />
+          <h4>Colorful Floral Dress</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <p>$150.00</p>
+        </div>
+        <div class="col-4">
+          <img src="image/mens-tshirt.png" width="230px" height="300px" alt="navy-blue-jumper" />
+          <h4>Long Sleeve Polo Shirt</h4> </h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$79.99</p>
+        </div>
+        <div class="col-4">
+          <img src="image/kids-jumper-b.png" width="230px" height="300px" alt="navy-blue-jumper" />
+          <h4>Animals Theme Kids Jumper</h4>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <p>$30.00</p>
+        </div>
+      </div>
+    </div>
+<!---OLD SECTION-->
+
    
-
+    <section class="user-login">
+      <li>
+        {{#if loggedIn}}
+        <button id="logout">Logout</button>
+        {{else}}
+        <a href="/login">Sign in</a><span> or </span>
+        <a href="/register">register</a>
+        {{/if}}
+      </li>
+    </section>
+    <main id="content-wrap">{{{ body }}}</main>
+<!----------------Footer------>
     <footer id="footer">
-        <section class="footer-link">
-            <section class="navbar">
-                <nav>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/contact-us">Contact Us</a></li>
-                    <li><a href="/customer-support">Customer Support</a></li>
-                    <li><a href="/legal">Legal</a></li>
-                </nav>
-            </section>
-
-            <section>
-                <a class="track-order" href="/track-order">Track My Order</a>
-            </section>
+      <section class="footer-link">
+        <section class="navbar">
+          <nav>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/customer-support">Customer Support</a></li>
+            <li><a href="/legal">Legal</a></li>
+          </nav>
         </section>
 
-        <p>copyright &copy; 2021 </p>
+        <section>
+          <a class="track-order" href="/track-order">Track My Order</a>
+        </section>
+      </section>
+
+      <p>copyright &copy; 2021</p>
     </footer>
 
     <script src="/script/app.js"></script>
-</body>
-
+  </body>
 </html>
