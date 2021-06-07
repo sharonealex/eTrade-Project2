@@ -5,6 +5,6 @@ const addressRoutes = require('./address-routes')
 
 router.use('/products', productRoutes);
 router.use('/categories', categoryRoutes);
-router.use('./address', addressRoutes)
+router.use('/address', addressRoutes)
 
 module.exports = router;

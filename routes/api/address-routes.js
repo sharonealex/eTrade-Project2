@@ -14,7 +14,7 @@ const { Address, User } = require('../../models')
         return;
       }
   
-      res.status(200).json(category);
+      res.status(200).json(address);
     } catch (err) {
       res.status(500).json(err);
     }
