@@ -33,7 +33,7 @@ User.init(
       type: DataTypes.STRING
     },
     phone_number: {
-      type: DataTypes.INTEGER
+      type: DataTypes.BIGINT
     },
   },
  {
