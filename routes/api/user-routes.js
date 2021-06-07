@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try{
-        const addUsers = await User.create(
+        const createUsers = await User.create(
             {
                 username: req.body.username,
                 password: req.body.password,
@@ -31,7 +31,7 @@ router.post('/', async (req, res) => {
         req.session.save(() => {
             req.session.loggedIn = true;
 
-            res.status(200).json(addUsers);
+            res.status(200).json(createUsers);
         });
     } catch(err){
         res.status(500).json(err);
@@ -40,24 +40,32 @@ router.post('/', async (req, res) => {
 
 // //login
 
-router.post('/', async (req, res) => {
+
+router.post('/login', async (req, res) => {
     try{
-        const userLogin = await user.findOne({
+        const userLogin = await User.findOne({
             where: {
                 username: req.body.user,
             },
         });
 
-        if(!userLogin || userLogin === '') {
+        if(!userLogin) {
             res.status(400).json({message: "incorrect username, please enter a username to continue!!!"});
 
+            return;
+        }
+
+        const userPassword = await User.checkedPassword(req.body.password);
+
+        if(!userPassword) {
+            res.status(400).json({ message: "Incorrect password. Please try again!" });
             return;
         }
 
         req.session.save(() => {
             req.session.loggedIn = true;
 
-            res.status(200).json({ user: userLogin, message: "Ypou are now logged in!"});
+            res.status(200).json({ User: userLogin, message: "You are now logged in!"});
         })
 
     } catch(err) {
@@ -67,7 +75,7 @@ router.post('/', async (req, res) => {
 
 //Log out
 
-router.post('/eTrade/logout', (req, res) => {
+router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
         req.session.destroy(() => {
             res.status(204).end();
