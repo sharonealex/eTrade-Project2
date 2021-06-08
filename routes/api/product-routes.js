@@ -9,20 +9,10 @@ const { Product, Category } = require("../../models");
 //Fetches all the Products with associated Category and applicable Discounts.
 router.get("/", async (req, res) => {
   try {
-<<<<<<< HEAD
-    const products = await Product.findAll(
-      {
-        include: [{ model: Category }],
-      }
-    );
-   // res.status(200).json(products);
-   res.render('mens', {products});
-=======
     const products = await Product.findAll({
       include: [{ model: Category }],
     });
     res.status(200).json(products);
->>>>>>> main
   } catch (err) {
     res.status(500).json(err);
   }
@@ -36,13 +26,8 @@ router.get("/:id", async (req, res) => {
       include: [{ model: Category }],
     });
 
-<<<<<<< HEAD
     if (!productData) {
       res.status(404).json({ message: 'No product found with this id!' });
-=======
-    if (!product) {
-      res.status(404).json({ message: "No product found with this id!" });
->>>>>>> main
       return;
     }
     const product = productData.get({ plain: true });
