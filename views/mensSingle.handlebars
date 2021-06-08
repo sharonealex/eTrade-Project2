@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <section class="back-home">
     <a href="/eTrade">Back to Home page</a>
 </section>
 
 
-=======
->>>>>>> main
 <section class="clothing-area">
 
     <section class="title">
@@ -22,5 +19,27 @@
         </section>
         {{/each}}
     </section>
+
+    <div class="box-container">
+  <div class="dish-card-header">
+        <img class="clothes-img" src="{{product.image}}" alt="">
+  </div>
+  <div class="box-container">
+    <p>
+      Name:
+      {{description}}
+    </p>
+    <p>
+      Guest:
+      {{guest_name}}
+    </p>
+    {{#if has_nuts}}
+      <p class="has-nuts">
+        Contains Nuts
+      </p>
+    {{/if}}
+  </div>
+</div>
+
 
 </section>
