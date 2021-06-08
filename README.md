@@ -78,16 +78,12 @@ If you would like to reach someone from the team in regards to questions or comm
 
 Hayden: <br>
 GitHub: [Hayden-code](https://github.com/Hayden-code) <br>
-Email: [haychjones@gmail.com](haychjones@gmail.com)
 
 Luis: <br>
 GitHub: [LuisBonilla89](https://github.com/LuisBonilla89) <br>
-Email: [luis.bonilla8907@outlook.com](luis.bonilla8907@outlook.com)
 
 Andrew: <br>
 GitHub: [and1roxx43](https://github.com/and1roxx43) <br>
-Email: [and1roxx43@gmail.com](and1roxx43@gmail.com)
 
 Sharon: <br>
 GitHub: [sharonealex](https://github.com/sharonealex) <br>
-Email: [sharonelizalex@gmail.com](sharonelizalex@gmail.com)
