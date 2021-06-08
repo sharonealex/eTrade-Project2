@@ -1,8 +1,5 @@
 const router = require("express").Router();
 const { Address, User } = require("../../models");
-router.get("/", (req, res) => {
-  res.render("header");
-});
 //get Address by UserId
 
 router.get("/:id", async (req, res) => {

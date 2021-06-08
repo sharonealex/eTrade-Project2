@@ -97,4 +97,8 @@ router.get("/clothing-details", (req, res) => {
   res.render("clothing-details");
 });
 
+router.get("/products", (req, res) => {
+  res.render("products");
+});
+
 module.exports = router;

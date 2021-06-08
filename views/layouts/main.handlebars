@@ -1,114 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eTrade-Project</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  <body class="main-container">
     <header class="header">
-        <a href="/eTrade" id="logo"><img src="../image/eTrade_logo.png" alt="eTrade logo" height="250px"
-                width="250px"></a>
-        <section class="search-area">
-
-            <select name="clothing" id="searchBySelection" class="search-txt">
-                <optgroup label="Mens Selection...">
-                    <option value="default" selected>Please select your item...</option>
-                    <option value="/image/mens-jeans.png">Jeans</option>
-                    <option value="mens-jumper">Jumper</option>
-                    <option value="mens-sweater">Sweater</option>
-                    <option value="mens-longSleeveShirt">Long sleeve shirt</option>
-                    <option value="mens-tshirtLongSleeve">T-shirt long sleeve</option>
-                    <option value="mens-short">Shorts</option>
-                    <option value="mens-singlet">Singlets</option>
-                    <option value="mens-tShirt">T-shirt</option>
-                    <option value="mens-casualPants">Casual pants</option>
-                    <option value="mens-jacket">Waterproof jacket</option>
-                    <option value="mens-cargoPants">Cargo pants</option>
-                </optgroup>
-
-                <optgroup label="Women Selection...">
-                    <option value="default">Jeans</option>
-                    <option value="default">Jumper</option>
-                    <option value="default">Sweat-shirt</option>
-                    <option value="default">Tee front twist</option>
-                    <option value="default">Cami top & skirt</option>
-                    <option value="default">Dress floral</option>
-                    <option value="default">Dress</option>
-                    <option value="default">Sweater vest</option>
-                    <option value="default">T-shirt</option>
-                    <option value="default">Top leopard</option>
-                    <option value="default">Shorts</option>
-                    <option value="default">Blazer</option>
-                </optgroup>
-
-                <optgroup label="Girls Selection...">
-                    <option value="default">Girls sweater and dress</option>
-                    <option value="default">Jeans</option>
-                    <option value="default">Girls Pjs</option>
-                    <option value="default">Girls jacket</option>
-                    <option value="default">Girls fancy dress</option>
-                    <option value="default">Girls jumper</option>
-                </optgroup>
-
-                <optgroup label="Boys Selection...">
-                    <option value="default">Boys track pants</option>
-                    <option value="default">Boys jumper </option>
-                    <option value="default">Boys t-shirt</option>
-                    <option value="default">Boys jacket</option>
-                    <option value="default">Boys cargo pants</option>
-                    <option value="default">Boys sweaters</option>
-                </optgroup>
-            </select>
-
-            <button class="btn-search" value="submit">Search</button>
+    <section class="container">
+      
+      <section class="navbar">
+        <section class="logo">
+          <img src="/image/logo.png" width="125px" />
         </section>
-        <section class="user-login">
-            <li>
-                {{#if loggedIn}}
-                <button id="logout">Logout</button>
-                {{else}}
-                <a href="/eTrade/login">Sign in</a><span> or </span>
-                <a href="/eTrade/register">register</a>
-                {{/if}}
-            </li>
-        </section>
-    </header>
-
-
-    <main id="content-wrap">
-        {{{ body }}}
-
-    </main>
-
-
-    <footer id="footer">
-        <section class="footer-link">
-            <section class="navbar">
-                <nav>
-                    <li><a href="/eTrade/about-us">About Us</a></li>
-                    <li><a href="/eTrade/contact-us">Contact Us</a></li>
-                    <li><a href="/eTrade/customer-support">Customer Support</a></li>
-                    <li><a href="/eTrade/legal">Legal</a></li>
-                </nav>
-            </section>
-
-            <section>
-                <a class="track-order" href="/eTrade/track-order">Track My Order</a>
-            </section>
-        </section>
-
-        <p>copyright &copy; 2021 </p>
+        <nav>
+          <ul>
+            <li><a href="/eTrade">Home</a></li>
+            <li><a href="/eTrade/Products">Products</a></li>
+            <li><a href="/eTrade/about-us">About</a></li>
+            <li><a href="/eTrade/contact-us">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="/image/shopping-cart.png"
+          width="30px"
+          height="30px"
+          alt="shopping cart icon"
+        />
+      </section>
+    </section>
+  </header>
+  <main id="main">
+    {{{ body }}}
+  </main>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Dowload Our App</h3>
+            <p>Download for Android or IOS mobile phone.</p>
+            <div class="app-logo">
+              <img src="/image/google-badge.png" alt="google-badge" />
+              <img src="/image/apple-badge.png" alt="apple-badge" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="/image.logo.png" alt="" />
+            <p>
+              Our goal is to create a very pleasant shopping experience for the
+              public.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Resources</h3>
+            <ul>
+              <li>Blog Post</li>
+              <li>Coupons</li>
+              <li>Return Policy</li>
+              <li>Join Us</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">- Copyright 2021 -</p>
+      </div>
     </footer>
+
     {{#if loggedIn}}
     <script src="/script/logout.js"></script>
     {{/if}}
 
     <script src="/script/app.js"></script>
-</body>
-
+  </body>
 </html>

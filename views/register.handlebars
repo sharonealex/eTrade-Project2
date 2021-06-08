@@ -1,10 +1,31 @@
+
+
+<section>
+        <section class="user-login" style="float: right;">
+            <li>
+                {{#if loggedIn}}
+                <button id="logout" >Logout</button>
+                {{else}}
+                <a href="/eTrade/login">Sign in</a>
+                {{/if}}
+            </li>
+        </section>
+</section>
+
 <section class="form-container">
     <section>
         <h1>Register</h1>
+        
     </section>
+    
     <form id="register-form">
-        <section class="form-group">
-            <input class="form-input" type="text" id="username" placeholder="Username" autocomplete="off" />
+  <fieldset class="fieldset">
+    <legend>Personal Details:</legend>
+    <div class="flex">
+      
+        <div>
+      <section class="form-group">
+            <input class="form-input" type="text" id="username" placeholder="Username" autocomplete="off"/>
         </section>
 
         <section class="form-group">
@@ -22,12 +43,36 @@
         <section class="form-group">
             <input class="form-input" type="text" id="phone" placeholder="Phone Number" />
         </section>
+    </div>
+    
+    <div>
+    
+        <section class="form-group">
+            <input class="form-input" type="text" id="city" placeholder="City"/>
+        </section>
 
         <section class="form-group">
-            <input type="submit" id="registerBtn" value="Submit">
-
+            <input class="form-input" type="text" id="Address1" placeholder="Address 1"/>
         </section>
-    </form>
+
+        <section class="form-group">
+            <input class="form-input" type="text" id="Address2" placeholder="Address 2"/>
+        </section>
+
+        <section class="form-group">
+            <input class="form-input" type="text" id="postcode" placeholder="Postcode"/>
+        </section>
+    </div>
+      
+       
+      
+    </div>
+    
+   <div><button id="register-btn">Submit</button></div>
+    
+  </fieldset>
+  
+</form>
 </section>
 
 <script src="/script/register.js"></script>
