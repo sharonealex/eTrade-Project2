@@ -1,74 +1,18 @@
-
-<section class="back-home">
-    <a href="/eTrade">Back to Home page</a>
-</section>
-
-<main class="clothing-area">
+<section class="clothing-area">
 
     <section class="title">
         <h1>Kids Clothing</h1>
     </section>
 
+
     <section class="box-container">
-        <section class="grid-box kids-sweater-dress">
-            <a href=""><img class="clothes-img" src="/image/kids-sweater-dress.png" alt=""></a>
-            <figcaption>Girls sweater and dress AU$39.99</figcaption>
+        {{#each products as |product|}}
+        <section class="grid-box">
+            <a href=""><img class="clothes-img" src="{{product.image}}" alt=""></a>
+            <figcaption>{{product.name}}</figcaption>
+            <p>Price: {{product.price}} {{product.currency}}</p>
         </section>
-
-        <section class="grid-box kids-jeans">
-            <a href=""><img class="clothes-img" src="/image/kids-jeans.png" alt=""></a>
-            <figcaption>Jeans unisex AU$55.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-pjs">
-            <a href=""></a><img class="clothes-img" src="/image/kids-pjs.png" alt="">
-            <figcaption>Girls Pjs AU$29.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-jacket">
-            <a href=""></a><img class="clothes-img" src="/image/kids-jacket.png" alt="">
-            <figcaption>Girls jacket AU$65.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-fancy-dress">
-            <a href=""></a><img class="clothes-img" src="/image/kids-fancy-dress.png" alt="">
-            <figcaption>Girls fancy dress AU$52.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-jumper">
-            <a href=""></a><img class="clothes-img" src="/image/kids-jumper.png" alt="">
-            <figcaption>Girls jumper AU$28.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-trackpants-b">
-            <a href=""></a><img class="clothes-img" src="/image/kids-trackpants-b.png" alt="">
-            <figcaption>Boys track pants AU$31.99</figcaption>
-        </section>
-        <section class="grid-box kids-jumper-b">
-            <a href=""></a><img class="clothes-img" src="/image/kids-jumper-b.png" alt="">
-            <figcaption>Boys jumper AU$37.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-jacket-b">
-            <a href=""></a><img class="clothes-img" src="/image/kids-jacket-b.png" alt="">
-            <figcaption>Boys jacket AU$56.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-tshirt-b">
-            <a href=""></a><img class="clothes-img" src="/image/kids-tshirt-b.png" alt="">
-            <figcaption>Boys t-shirt AU$21.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-cargo-b">
-            <a href=""></a><img class="clothes-img" src="/image/kids-cargo-b.png" alt="">
-            <figcaption>Boys cargo pants AU$42.99</figcaption>
-        </section>
-
-        <section class="grid-box kids-sweat-b">
-            <a href=""></a><img class="clothes-img" src="/image/kids-sweat-b.png" alt="">
-            <figcaption>Boys sweaters AU$39.99</figcaption>
-        </section>
-
+        {{/each}}
     </section>
 
-</main>
+</section>

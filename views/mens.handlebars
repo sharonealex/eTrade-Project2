@@ -1,77 +1,19 @@
 
-
-<section class="back-home">
-    <a href="/eTrade">Back to Home page</a>
-</section>
-
-
 <section class="clothing-area">
 
     <section class="title">
         <h1>Mens Clothing</h1>
     </section>
 
+
     <section class="box-container">
-
+        {{#each products as |product|}}
         <section class="grid-box">
-            <a href=""><img class="clothes-img" src="/image/mens-jeans.png" alt=""></a>
-            <figcaption>Jeans AU$69.99</figcaption>
+            <a href=""><img class="clothes-img" src="{{product.image}}" alt=""></a>
+            <figcaption>{{product.name}}</figcaption>
+            <p>Price: {{product.price}} {{product.currency}}</p>
         </section>
-
-        <section class="grid-box">
-            <a href=""><img class="clothes-img" src="/image/mens-jumper.png" alt=""></a>
-            <figcaption>Jumper AU$89.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-jumper2.png" alt="">
-            <figcaption>Sweater AU$79.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-shirts.png" alt="">
-            <figcaption>Long sleeve shirt AU$109.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-short-sleeve-shirt.png" alt="">
-            <figcaption>Short sleeves shirt AU$65.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-tshirt.png" alt="">
-            <figcaption>T-shirt long sleeve AU$45.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-shorts.png" alt="">
-            <figcaption>Shorts AU$34.99</figcaption>
-        </section>
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-singlets.png" alt="">
-            <figcaption>Singlets AU$25.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-tshirt2.png" alt="">
-            <figcaption>T-shirt AU$20.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-casual-pants.png" alt="">
-            <figcaption>Casual pants AU$36.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-jacket.png" alt="">
-            <figcaption>Waterproof jacket AU$75.99</figcaption>
-        </section>
-
-        <section class="grid-box">
-            <a href=""></a><img class="clothes-img" src="/image/mens-cargo.png" alt="">
-            <figcaption>Cargo pants AU$45.99</figcaption>
-        </section>
-
+        {{/each}}
     </section>
 
 </section>

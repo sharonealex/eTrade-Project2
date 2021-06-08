@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const { Address, User } = require("../../models");
-
 //get Address by UserId
 
 router.get("/:id", async (req, res) => {
