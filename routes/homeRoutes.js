@@ -1,16 +1,12 @@
-<<<<<<< HEAD
+
 const router = require('express').Router();
 const { Product, Category } = require('../models')
-=======
-const router = require("express").Router();
->>>>>>> main
 
 router.get("/", (req, res) => {
   res.render("all", { loggedIn: req.session.loggedIn });
 });
 
 router.get("/about-us", (req, res) => {
-<<<<<<< HEAD
     res.render("about-us");
   });
 
@@ -73,45 +69,6 @@ router.get("/about-us", (req, res) => {
     //     return;
     // }
     res.render('login');
-=======
-  res.render("about-us");
-});
-
-router.get("/contact-us", (req, res) => {
-  res.render("contact-us");
-});
-
-router.get("/legal", (req, res) => {
-  res.render("legal");
-});
-
-router.get("/customer-support", (req, res) => {
-  res.render("customer-support");
-});
-
-router.get("/track-order", (req, res) => {
-  res.render("track-order");
-});
-
-router.get("/mens", (req, res) => {
-  res.render("mens");
-});
-
-router.get("/womens", (req, res) => {
-  res.render("womens");
-});
-
-router.get("/kids", (req, res) => {
-  res.render("kids");
-});
-
-router.get("/login", (req, res) => {
-  // if(req.session.loggedIn){
-  //     res.redirect("/");
-  //     return;
-  // }
-  res.render("login");
->>>>>>> main
 });
 router.get("/register", (req, res) => {
   res.render("register");
