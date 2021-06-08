@@ -52,7 +52,7 @@ router.get("/mens/:id", async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
+
 router.get("/womens", async (req, res) => {
   try {
     const productsData = await Product.findAll({
@@ -82,7 +82,7 @@ router.get("/kids", async (req, res) => {
     res.status(500).json(err);
   }
 });
-=======
+
   router.get('/products/:id', async (req, res) => {
     try {
       const productData = await Product.findByPk(req.params.id, {
@@ -95,14 +95,7 @@ router.get("/kids", async (req, res) => {
     }
   });
   
-  router.get('/womens', (req, res) => {
-    res.render('womens');
-  });
-  
-  router.get('/kids', (req, res) => {
-    res.render("kids");
-  });
->>>>>>> 8a34f80 (initial set up for single product)
+
 
 router.get("/login", (req, res) => {
   // if(req.session.loggedIn){
