@@ -22,14 +22,15 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const product = await Product.findByPk(req.params.id, {
+    const productData = await Product.findByPk(req.params.id, {
       include: [{ model: Category }],
     });
 
-    if (!product) {
-      res.status(404).json({ message: "No product found with this id!" });
+    if (!productData) {
+      res.status(404).json({ message: 'No product found with this id!' });
       return;
     }
+    const product = productData.get({ plain: true });
 
     res.status(200).json(product);
   } catch (err) {
