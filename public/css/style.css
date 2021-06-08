@@ -292,7 +292,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-auto-rows: 330px;
-    grid-gap: 10px;
+    grid-gap: 50px;
     padding: 50px;
     height: 70vh;
 }

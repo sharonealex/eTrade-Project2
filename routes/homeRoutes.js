@@ -41,6 +41,18 @@ router.get("/about-us", (req, res) => {
       res.status(500).json(err);
     }
   });
+
+  router.get('/mens/:id', async (req, res) => {
+    try {
+      const productData = await Product.findByPk(req.params.id, {
+        include: [{ model: Category }],
+      });
+      const product = productData.get({ plain: true });
+     res.render('mens', {product});
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
   
   router.get('/womens', (req, res) => {
     res.render('womens');
