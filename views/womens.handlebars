@@ -1,69 +1,18 @@
 <section class="clothing-area">
 
     <section class="title">
-        <h1>Women Clothing</h1>
+        <h1>Womens Clothing</h1>
     </section>
 
+
     <section class="box-container">
-        <section class="grid-box womens-jeans">
-            <a href=""><img class="clothes-img" src="/image/womens-jeans.png" alt=""></a>
-            <figcaption>Jeans AU$65.99</figcaption>
+        {{#each products as |product|}}
+        <section class="grid-box">
+            <a href=""><img class="clothes-img" src="{{product.image}}" alt=""></a>
+            <figcaption>{{product.name}}</figcaption>
+            <p>Price: {{product.price}} {{product.currency}}</p>
         </section>
-
-        <section class="grid-box womens-jumper">
-            <a href=""><img class="clothes-img" src="/image/womens-knitwear.png" alt=""></a>
-            <figcaption>Jumper AU$79.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-sweatshirt">
-            <a href=""></a><img class="clothes-img" src="/image/womens-sweatshirt.png" alt="">
-            <figcaption>Sweat-shirt AU$56.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-tee-twist">
-            <a href=""></a><img class="clothes-img" src="/image/womens-tee-twist.png" alt="">
-            <figcaption>Tee front twist AU$36.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-camitop-skirt">
-            <a href=""></a><img class="clothes-img" src="/image/womens-camitop-skirt.png" alt="">
-            <figcaption>Cami top & skirt AU$68.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-dress-floral">
-            <a href=""></a><img class="clothes-img" src="/image/womens-dress-floral.png" alt="">
-            <figcaption>Dress floral AU$50.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-dress">
-            <a href=""></a><img class="clothes-img" src="/image/womens-dress.png" alt="">
-            <figcaption>Dress AU$34.99</figcaption>
-        </section>
-        <section class="grid-box womens-sweater-vest">
-            <a href=""></a><img class="clothes-img" src="/image/womens-sweater-vest.png" alt="">
-            <figcaption>Sweater vest AU$35.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-tshirt.">
-            <a href=""></a><img class="clothes-img" src="/image/womens-tshirt.png" alt="">
-            <figcaption>T-shirt AU$20.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-top-leopard">
-            <a href=""></a><img class="clothes-img" src="/image/womens-top-leopard.png" alt="">
-            <figcaption>Top leopard AU$47.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-shorts">
-            <a href=""></a><img class="clothes-img" src="/image/womens-shorts.png" alt="">
-            <figcaption>Shorts AU$35.99</figcaption>
-        </section>
-
-        <section class="grid-box womens-blazer">
-            <a href=""></a><img class="clothes-img" src="/image/womens-blazer.png" alt="">
-            <figcaption>Blazer AU$78.99</figcaption>
-        </section>
-
+        {{/each}}
     </section>
 
 </section>
