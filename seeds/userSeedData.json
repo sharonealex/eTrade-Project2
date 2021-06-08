@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "username": "Sal",
+        "password": "hash",
+        "first_name": "Salmona",
+        "last_name": "Rubello",
+        "phone_number": 5673454345
+    },
+    {
+        "id": 2,
+        "username": "Marko124",
+        "password": "hash",
+        "first_name": "Mark",
+        "last_name": "Rossenden",
+        "phone_number": 3333454345
+    },
+    {
+        "id": 3,
+        "username": "Shaz78",
+        "password": "hash",
+        "first_name": "Shannon",
+        "last_name": "Timber",
+        "phone_number": 9333454347
+    },
+    {
+        "id": 4,
+        "username": "Lorasz",
+        "password": "hash",
+        "first_name": "Lora",
+        "last_name": "Smith",
+        "phone_number": 5333454345
+    },
+    {
+        "id": 5,
+        "username": "Alexan#23",
+        "password": "hash",
+        "first_name": "Alexa",
+        "last_name": "William",
+        "phone_number": 3333454345
+    }
+
+]

@@ -6,160 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eTrade-Project</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/products.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
-
-  <body>
-    <div class="header">
-      <section class="container">
-        <section class="navbar">
-          <section class="logo">
-            <img src="" width="125px" />
-          </section>
-          <nav>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
-            </ul>
-          </nav>
-          <img
-            src="image/shopping-cart.png"
-            width="30px"
-            height="30px"
-            alt="shopping cart icon"
-          />
+  
+  <body class="main-container">
+    <header class="header">
+    <section class="container">
+      
+      <section class="navbar">
+        <section class="logo">
+          <img src="/image/logo.png" width="125px" />
         </section>
-        <div class="row">
-          <div class="col-2">
-            <h1>
-              The Best Place To <br />
-              Buy Online!
-            </h1>
-            <p>
-              Sucess is not always about greatness. It is about consistency.
-              Consistent<br />hard work gains sucess. Greatness will come.
-            </p>
-            <a href="" class="btn">Sign Up &#10174;</a>
-          </div>
-          <div class="col-2">
-            <img src="/image/Slider.jpeg" />
-          </div>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="/eTrade">Home</a></li>
+            <li><a href="/eTrade/Products">Products</a></li>
+            <li><a href="/eTrade/about-us">About</a></li>
+            <li><a href="/eTrade/contact-us">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="/image/shopping-cart.png"
+          width="30px"
+          height="30px"
+          alt="shopping cart icon"
+        />
       </section>
-    </div>
-
-    <!--Featured Categories-->
-
-    <div class="categories">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-3">
-            <img src="image/model-1.jpeg" alt="female-model" />
-          </div>
-          <div class="col-3">
-            <img src="image/Model-4.jpeg" alt="male-model" />
-          </div>
-          <div class="col-3">
-            <img src="image/model-3.png" alt="boy-model" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Featured Products-->
-    <div class="small-container">
-      <h2 class="title">Featured Products</h2>
-      <div class="row">
-        <div class="col-4">
-          <img src="image/mens-jumper.png" width="230px" height="300px" alt="navy-blue-jumper" />
-          <h4>Navy Blue Jumper</h4>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$70.00</p>
-        </div>
-        <div class="col-4">
-         <img src="image/Women_dress.png" width="200px" height="300px" alt="navy-blue-jumper" />
-          <h4>Colorful Floral Dress</h4>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-          </div>
-          <p>$150.00</p>
-        </div>
-        <div class="col-4">
-          <img src="image/mens-tshirt.png" width="230px" height="300px" alt="navy-blue-jumper" />
-          <h4>Long Sleeve Polo Shirt</h4> </h4>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$79.99</p>
-        </div>
-        <div class="col-4">
-          <img src="image/kids-jumper-b.png" width="230px" height="300px" alt="navy-blue-jumper" />
-          <h4>Animals Theme Kids Jumper</h4>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-          </div>
-          <p>$30.00</p>
-        </div>
-      </div>
-    </div>
-<!---OLD SECTION-->
-
-   
-    <section class="user-login">
-      <li>
-        {{#if loggedIn}}
-        <button id="logout">Logout</button>
-        {{else}}
-        <a href="/login">Sign in</a><span> or </span>
-        <a href="/register">register</a>
-        {{/if}}
-      </li>
     </section>
-    <main id="content-wrap">{{{ body }}}</main>
-<!----------------Footer------>
-    <footer id="footer">
-      <section class="footer-link">
-        <section class="navbar">
-          <nav>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
-            <li><a href="/customer-support">Customer Support</a></li>
-            <li><a href="/legal">Legal</a></li>
-          </nav>
-        </section>
-
-        <section>
-          <a class="track-order" href="/track-order">Track My Order</a>
-        </section>
-      </section>
-
-      <p>copyright &copy; 2021</p>
+  </header>
+  <main id="main">
+    {{{ body }}}
+  </main>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Dowload Our App</h3>
+            <p>Download for Android or IOS mobile phone.</p>
+            <div class="app-logo">
+              <img src="/image/google-badge.png" alt="google-badge" />
+              <img src="/image/apple-badge.png" alt="apple-badge" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="/image.logo.png" alt="" />
+            <p>
+              Our goal is to create a very pleasant shopping experience for the
+              public.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Resources</h3>
+            <ul>
+              <li>Blog Post</li>
+              <li>Coupons</li>
+              <li>Return Policy</li>
+              <li>Join Us</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">- Copyright 2021 -</p>
+      </div>
     </footer>
+
+    {{#if loggedIn}}
+    <script src="/script/logout.js"></script>
+    {{/if}}
 
     <script src="/script/app.js"></script>
   </body>

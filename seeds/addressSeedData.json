@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "user_id": 2,
+        "address_line1": "200 Response St",
+        "address_line2": "",
+        "city": "Melbourne",
+        "postal_code": 3076
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "address_line1": "Alfread Ave, Southern Road",
+        "address_line2": "",
+        "city": "Sydney",
+        "postal_code": 2356
+    },
+    {
+        "id": 3,
+        "user_id": 3,
+        "address_line1": "711-2880 Nulla St.",
+        "address_line2": "Mankato",
+        "city": "Mississippi",
+        "postal_code": 96522
+    },
+    {
+        "id": 4,
+        "user_id": 4,
+        "address_line1": "606-3727 Ullamcorper. Street",
+        "address_line2": "Roseville NH",
+        "city": "Melbourne",
+        "postal_code": 5643
+    },
+    {
+        "id": 5,
+        "user_id": 5,
+        "address_line1": "Ap #867-859 Sit Rd",
+        "address_line2": "",
+        "city": "/image/mens-singlets.png",
+        "postal_code": true
+    }
+
+]
