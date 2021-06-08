@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const { Product, Category } = require("../models");
 
-router.get("/", (req, res) => {
-  res.render("all", { loggedIn: req.session.loggedIn });
-});
+router.get('/', (req, res)=>{
+   res.render('all');
+})
 
 router.get("/about-us", (req, res) => {
   res.render("about-us");
@@ -52,6 +52,7 @@ router.get("/mens/:id", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 router.get("/womens", async (req, res) => {
   try {
     const productsData = await Product.findAll({
@@ -81,6 +82,27 @@ router.get("/kids", async (req, res) => {
     res.status(500).json(err);
   }
 });
+=======
+  router.get('/products/:id', async (req, res) => {
+    try {
+      const productData = await Product.findByPk(req.params.id, {
+        include: [{ model: Category }],
+      });
+      const product = productData.get({ plain: true });
+     res.render('product', {product});
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+  
+  router.get('/womens', (req, res) => {
+    res.render('womens');
+  });
+  
+  router.get('/kids', (req, res) => {
+    res.render("kids");
+  });
+>>>>>>> 8a34f80 (initial set up for single product)
 
 router.get("/login", (req, res) => {
   // if(req.session.loggedIn){
@@ -94,7 +116,9 @@ router.get("/register", (req, res) => {
 });
 
 router.get("/clothing-details", (req, res) => {
-  res.render("clothing-details");
+  res.render('clothing-details');
 });
+
+  
 
 module.exports = router;
