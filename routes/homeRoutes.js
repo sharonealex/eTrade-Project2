@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.render("all");
+  res.render("all", { loggedIn: req.session.loggedIn });
 });
 
 router.get("/about-us", (req, res) => {

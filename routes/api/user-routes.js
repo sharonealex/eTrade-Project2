@@ -25,8 +25,8 @@ router.post("/", async (req, res) => {
     });
 
     req.session.save(() => {
-      //   req.session.user_id = createUsers.id
-      //   req.session.username = createUsers.username;
+      //   req.session.user_id = user.id
+      //   req.session.username = user.username;
       req.session.loggedIn = true;
 
       res.status(200).json(createUsers);
@@ -41,41 +41,36 @@ router.post("/", async (req, res) => {
 
 router.post("/login", async (req, res) => {
   try {
-    const userLogin = await User.findOne({
+    const user = await User.findOne({
       where: {
         username: req.body.username,
       },
     });
 
-    if (!userLogin) {
-      res.status(400).json({
+    if (!user) {
+      return res.status(400).json({
         message: "incorrect username, please enter a username to continue!!!",
       });
-
-      return;
     }
 
-    const userPassword = await User.checkPassword(req.body.password);
+    const userPassword = await user.checkPassword(req.body.password);
 
     if (!userPassword) {
-      res
+      return res
         .status(400)
         .json({ message: "Incorrect password. Please try again!" });
-      return;
     }
 
     req.session.save(() => {
-      //   req.session.user_id = createUsers.id
-      //   req.session.username = createUsers.username;
+      //   req.session.user_id = user.id
+      //   req.session.username = user.username;
       req.session.loggedIn = true;
 
-      res
-        .status(200)
-        .json({ User: userLogin, message: "You are now logged in!" });
+      return res.status(200).json({ user, message: "You are now logged in!" });
     });
   } catch (err) {
     console.log("oh no" + err);
-    res.status(500).json(err);
+    return res.status(500).json(err);
   }
 });
 
