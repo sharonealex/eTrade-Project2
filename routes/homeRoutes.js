@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { Product, Category } = require("../models");
 
 router.get("/", (req, res) => {
-  res.render("all", { loggedIn: req.session.loggedIn });
+  res.render("all");
 });
 
 router.get("/about-us", (req, res) => {
@@ -82,11 +82,14 @@ router.get("/kids", async (req, res) => {
   }
 });
 
+router.get("/account", (req, res) => {
+  res.render("account");
+});
 router.get("/login", (req, res) => {
-  // if(req.session.loggedIn){
-  //     res.redirect("/");
-  //     return;
-  // }
+  if (req.session.loggedIn) {
+    res.redirect("/eTrade/account");
+    return;
+  }
   res.render("login");
 });
 router.get("/register", (req, res) => {

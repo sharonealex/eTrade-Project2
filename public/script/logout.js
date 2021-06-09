@@ -1,3 +1,7 @@
+const returnHome = () => {
+  document.location.replace("/eTrade/Products");
+};
+
 const logoutBtn = () => {
   var logoutConfirmed = confirm("Press OK to confirm");
 
@@ -20,3 +24,4 @@ const logout = async () => {
 };
 
 document.querySelector("#logout").addEventListener("click", logoutBtn);
+document.querySelector("#goHome").addEventListener("click", returnHome);
