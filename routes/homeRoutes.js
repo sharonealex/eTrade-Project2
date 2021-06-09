@@ -78,6 +78,7 @@ router.get("/kids", async (req, res) => {
     const products = productsData.map((item) => item.get({ plain: true }));
     res.render("kids", { products });
   } catch (err) {
+    //throw error
     res.status(500).json(err);
   }
 });
