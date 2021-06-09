@@ -46,7 +46,7 @@ router.get("/mens/:id", async (req, res) => {
       include: [{ model: Category }],
     });
     const product = productData.get({ plain: true });
-    res.render("mens", { product });
+    res.render("product", { product });
   } catch (err) {
     res.status(500).json(err);
   }
