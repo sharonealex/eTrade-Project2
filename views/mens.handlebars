@@ -1,16 +1,15 @@
+<section class="title">
+    <h1>Mens Clothing</h1>
+</section>
 
 <section class="clothing-area">
 
-    <section class="title">
-        <h1>Mens Clothing</h1>
-    </section>
-
-
-   <section class="box-container">
+    <section class="box-container">
         {{#each products as |product|}}
         <section class="grid-box">
             <a href="/eTrade/mens/{{product.id}}"><img class="clothes-img" src="{{product.image}}" alt=""></a>
-            <figcaption>{{product.name}} <span class="price">Price: {{product.currency}} {{product.price}} </span></figcaption>
+            <figcaption>{{product.name}} </figcaption>
+            <p>Price: {{product.currency}} {{product.price}} </p>
         </section>
         {{/each}}
     </section>
