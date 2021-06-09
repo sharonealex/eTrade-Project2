@@ -1,72 +1,70 @@
-<section class="clothing-area">
+<section class="product-area">
 
-    <section class="title">
-        <h1 style="font-size: large; font-weight:500">{{product.name}}</h1>
-    </section>
+    {{!-- <section class="title">
+        <h1 style="font-size: 30px; font-weight:500">{{product.name}}</h1>
+    </section> --}}
+    <br>
+    <section class="card-wrapper">
+        <section class="card">
+            <!--card left -->
 
-        <section class="card-wrapper">
-            <section class="card">
-                <!--card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <img src="{{product.image}}" alt="jeans" />
+                </div>
+            </div>
 
-                <div class="product-imgs">
-                    <div class="img-display">
-                            <img src="{{product.image}}" alt="jeans" />
-                    </div>
+            <!-- card right -->
+            <div class="product-content">
+                <h2 class="product-title">{{product.name}}</h2>
+                <a href="#" class="product-link">Visit store</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>4(21)</span>
+                </div>
+                <div class="product-price">
+                    <p class="last-price">Old Price: <span> {{product.price}} </span></p>
+                    <p class="new-price">New Price on Discount:
+                        <span> $26 AUD (5%)</span>
+                    </p>
+                    <ul>
+                        <li>Colour: <span>Black</span></li>
+                        <li>Available: <span>In stock</span></li>
+                        <li>Category: <span>{{product.category.name}}</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+                <div class="purchase-info">
+                    <input id="numberInput" type="number" min="0" max="10" value="1">
+                    <button type="button" class="submitBtn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                <br>
+                <div class="product-detail">
+                    <h2> about this item: </h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim
+                        id est laborum.</p>
                 </div>
 
-                <!-- card right -->
-                <div class="product-content">
-                    <h2 class="product-title">{{product.name}}</h2>
-                    <a href="#" class="product-link">Visit store</a>
-                    <div class="product-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>4(21)</span>
-                    </div>
-                    <div class="product-price">
-                        <p class="last-price">Old Price: <span> {{product.price}} </span></p>
-                        <p class="new-price">New Price on Discount:
-                            <span> $26 AUD (5%)</span>
-                        </p>
-                    </div>
-
-                    <div class="product-detail">
-                        <h2> about this item: </h2>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim
-                            id est laborum.</p>
-                        <ul>
-                            <li>Colour: <span>Black</span></li>
-                            <li>Available: <span>In stock</span></li>
-                            <li>Category: <span>{{product.category.name}}</span></li>
-                            <li>Shipping Fee: <span>Free</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="purchase-info">
-                        <input type="quantity" min="0" value="1">
-                        <button type="button" class="btn">
-                            Add to Cart <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-
-                    <div class="social-links">
-                        <p> Share at:</p>
-                        <a href="#">
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
+                <div class="social-links">
+                    <p> Share at:</p>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
-            </section>
+            </div>
         </section>
-    
+    </section>
