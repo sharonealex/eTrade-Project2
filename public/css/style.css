@@ -453,6 +453,10 @@ fieldset {
   margin: 20px 0 5px 0px;
 }
 
+
+.item-details {
+    color: #000;
+}
 /* *************** ABOUT US - CONTACT US - CUSTOMER SERVICE - LEGAL PAGE **************** */
 #main-page {
   display: flex;

@@ -21,10 +21,11 @@ router.get("/customer-support", (req, res) => {
   res.render("customer-support");
 });
 
-router.get("/track-order", (req, res) => {
-  res.render("track-order");
-});
+// router.get("/track-order", (req, res) => {
+//   res.render("track-order");
+// });
 
+// Mens
 router.get("/mens", async (req, res) => {
   try {
     const productsData = await Product.findAll({
@@ -52,6 +53,7 @@ router.get("/mens/:id", async (req, res) => {
   }
 });
 
+// Women
 router.get("/womens", async (req, res) => {
   try {
     const productsData = await Product.findAll({
@@ -67,6 +69,20 @@ router.get("/womens", async (req, res) => {
   }
 });
 
+router.get("/womens/:id", async (req, res) => {
+    try {
+      const productData = await Product.findByPk(req.params.id, {
+        include: [{ model: Category }],
+      });
+      const product = productData.get({ plain: true });
+      res.render("product", { product });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
+  //Kids
 router.get("/kids", async (req, res) => {
   try {
     const productsData = await Product.findAll({
@@ -81,6 +97,18 @@ router.get("/kids", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get("/kids/:id", async (req, res) => {
+    try {
+      const productData = await Product.findByPk(req.params.id, {
+        include: [{ model: Category }],
+      });
+      const product = productData.get({ plain: true });
+      res.render("product", { product });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 router.get("/account", (req, res) => {
   res.render("account");
