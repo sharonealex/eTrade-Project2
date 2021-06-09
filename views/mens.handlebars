@@ -9,7 +9,7 @@
    <section class="box-container">
         {{#each products as |product|}}
         <section class="grid-box">
-            <a href=""><img class="clothes-img" src="{{product.image}}" alt=""></a>
+            <a href="/eTrade/mens/{{product.id}}"><img class="clothes-img" src="{{product.image}}" alt=""></a>
             <figcaption>{{product.name}} <span class="price">Price: {{product.currency}} {{product.price}} </span></figcaption>
         </section>
         {{/each}}
