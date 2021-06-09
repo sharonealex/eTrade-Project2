@@ -1,4 +1,7 @@
 /* CSS Properties */
+:root {
+  --background-color: radial-gradient(#fff, #f8cab8);
+}
 
 * {
   margin: 0;
@@ -148,11 +151,11 @@ main#main {
   flex: 1 0 auto;
   height: 100%;
 }
-.header {
+header {
   flex: 0 1 auto;
-  background: radial-gradient(#fff, #f8cab8);
+  background: var(--background-color);
 }
-.header .row {
+header .row {
   margin-top: 70px;
 }
 .categories {
@@ -323,21 +326,22 @@ ul {
   justify-content: space-around;
 }
 
-.fieldset {
-  background-color: #141413;
+fieldset {
+  border: 2px solid #f8cab8;
+  border-radius: 5px;
   padding: 20px;
   width: 30%;
 }
 
-.regBtn {
+.submitBtnDiv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#registerBtn {
+.submitBtn {
   cursor: pointer;
-  background-color: #e0521a;
+  background-color: #fda785;
   color: #fff;
   font-size: 20px;
   border: none;

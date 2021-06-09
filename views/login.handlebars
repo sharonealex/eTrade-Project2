@@ -1,21 +1,33 @@
-{{!-- <section class="user-login" style="float:right">
-    <li>
-        <a href="/eTrade/register">register</a>
-    </li>
-</section> --}}
-
 <section class="form-container">
 
     <section>
         <h1>Login details</h1>
     </section>
 
-    <form id="login-form">
-        <input type="text" id="username" placeholder="Username" maxlength="50" autocomplete="off">
-        <input type="password" id="password" placeholder="Password" maxlength="15">
-        <input type="submit" id="login" value="Sign In">
-    </form>
+    <fieldset>
 
+        <div class="flex">
+            <form id="login-form">
+                <section class="form-group">
+                    <input class="form-input" type="text" id="username" placeholder="Username" maxlength="50"
+                        autocomplete="off">
+                </section>
+                <section class="form-group">
+                    <input class="form-input" type="password" id="password" placeholder="Password" maxlength="15">
+                </section>
+                <div class="submitBtnDiv">
+                    <input class="submitBtn" type="submit" id="login" value="Sign In">
+                </div>
+            </form>
+        </div>
+
+
+    </fieldset>
+
+
+    <a href="/etrade/register">
+        <p>Don't have an account? Register</p>
+    </a>
 </section>
 
 <script src="/script/login.js"></script>
