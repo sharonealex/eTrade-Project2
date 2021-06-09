@@ -22,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  line-height: 1.5;
 }
 
 .header {
@@ -331,6 +333,107 @@ p {
 
 #result {
   background-image: url();
+}
+
+/******************Product Display Page**********************/
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.img-display{
+  overflow: hidden;
+}
+.product-content{
+  padding: 2rem 1rem;
+}
+.product-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: black;
+  margin: 1rem 0;
+}
+
+.product-rating{
+  color: yellow;
+}
+
+.product-rating span{
+  font-weight: 600;
+  color: black;
+}
+
+.product-price{
+  margin: 1rem 0;
+  font-size: 1 rem;
+  font-weight: 700;
+}
+
+.product-price span{
+  font-weight: 400;
+}
+
+.last-price span {
+  color: red;
+  text-decoration: line-through;
+}
+
+.new-price span {
+  color: blue;
+}
+
+.product-detail h2{
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 0.6rem;
+}
+
+.product-detail p{
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+
+.product-detail ul{
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.product-detail ul li{
+  margin: 0;
+  list-style: none;
+  background: url('/image/checked.jpg') left center no-repeat;
+  background-size: 18px;
+  padding-left: 1.7rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.purchase-info input,
+
+.purchase-info .btn{
+  border: 1.5px solid white;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.purchase-info input{
+  width: 60px;
+}
+
+.purchase-info .btn{
+  cursor: pointer;
+  background-color: blue;
 }
 
 /* **** Media Screen ******/
