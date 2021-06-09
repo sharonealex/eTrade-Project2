@@ -15,6 +15,7 @@ router.get("/", async (req, res) => {
 //Create new user
 
 router.post("/", async (req, res) => {
+ console.log('inside router')
   try {
     const createUsers = await User.create({
       username: req.body.username,

@@ -8,10 +8,16 @@
         {{#each products as |product|}}
         <section class="grid-box">
             <a href="/eTrade/mens/{{product.id}}"><img class="clothes-img" src="{{product.image}}" alt=""></a>
-            <figcaption>{{product.name}} </figcaption>
+            <figcaption>{{product.name}} 
             <p>Price: {{product.currency}} {{product.price}} </p>
+             <button type="submit" value="Submit" class="add" onclick="addToCartHandler({{product.id}})">
+                         Add to Cart <i class="fas fa-shopping-cart"></i>
+    </button>
+            </figcaption>
         </section>
         {{/each}}
     </section>
 
 </section>
+
+<script src="/script/addToCart.js"></script>

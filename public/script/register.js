@@ -6,9 +6,10 @@ const signupFormHandler = async (event) => {
   const first_name = document.querySelector("#firstname").value.trim();
   const last_name = document.querySelector("#lastname").value.trim();
   const phone_number = document.querySelector("#phone").value.trim();
-
+  
+  console.log(username);
   if (username && password && first_name && last_name && phone_number) {
-    const response = await fetch("/eTrade/api/users", {
+    const response = await fetch("/api/users", {
       method: "POST",
       body: JSON.stringify({
         username,
@@ -19,6 +20,8 @@ const signupFormHandler = async (event) => {
       }),
       headers: { "Content-Type": "application/json" },
     });
+
+    console.log(response);
 
     if (response.ok) {
       document.location.replace("/eTrade/login");

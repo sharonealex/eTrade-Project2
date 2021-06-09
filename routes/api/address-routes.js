@@ -19,4 +19,18 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.post('/', async (req, res) => {
+  try {
+    const addressData = await Address.create({
+      id: req.body.id,
+      user_id: req.body.user_id,
+      address_line1: req.body.address_line1,
+      address_line2: req.body.address_line2,
+    });
+    res.status(200).json(addressData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 module.exports = router;
