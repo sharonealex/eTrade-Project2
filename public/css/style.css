@@ -396,6 +396,36 @@ fieldset {
   padding: 10px 10px 10px 10px;
 }
 
+/************ Product view page ************/
+.product-title {
+  margin: 20px 0px 5px 0px;
+}
+
+.card {
+  display: flex;
+}
+
+.card-wrapper {
+  padding: 0px 100px 100px 100px;
+}
+
+.img-display {
+  margin: 30px;
+  width: 500px;
+}
+
+.img-display img {
+  width: 100%;
+}
+
+#numberInput {
+  border: 2px solid #00000067;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 20px 0 5px 0px;
+}
+
 /* *************** ABOUT US - CONTACT US - CUSTOMER SERVICE - LEGAL PAGE **************** */
 #main-page {
   display: flex;
@@ -455,14 +485,4 @@ p {
 .back-home a:hover {
   text-decoration: underline;
   color: #066659;
-}
-
-/* ------- PRODUCT IMAGE ----------- */
-
-.img-display {
-  width: 50%;
-}
-
-.img-display img {
-  width: 100%;
 }
