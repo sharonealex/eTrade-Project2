@@ -11,7 +11,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -363,7 +363,7 @@ ul {
 .clothing-area {
   width: 65%;
   height: 80%;
-  margin: -50px auto;
+  margin: -70px auto;
 }
 
 .box-container {
@@ -374,6 +374,7 @@ ul {
   grid-gap: 20px;
   padding: 50px;
   height: 70vh;
+  margin-bottom: 100px;
 }
 
 .clothes-img {
@@ -451,4 +452,15 @@ p {
 .back-home a:hover {
   text-decoration: underline;
   color: #066659;
+}
+
+/* ------- PRODUCT IMAGE ----------- */
+
+
+.img-display {
+    width: 50%;
+}
+
+.img-display img {
+    width: 100%;
 }
