@@ -1,24 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-
-:root {
-  --body-bg: #f5f3f3;
-  --btn-search-bg: #4295da;
-  --btn-search-bg-hov: #117fda;
-  --btn-search-bg-hv-col: #d4deeb;
-  --btn-search-col: #f8f8f4;
-  --user-login-col: #328bdf;
-  --user-login-col-hv: #1266e4;
-  --container-anchor: #0d7979;
-  --container-anc-hv: #074d4d;
-  --footer-bg: #79dbbe;
-  --footer-p: #797676;
-  --footer-anchor: #574e4c;
-  --footer-anc-hv: #dc143c;
-  --clothes-border: #9fa7a7;
-  --clothes-caption: #2569c2;
-}
+/* CSS Properties */
 
 * {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -446,68 +429,464 @@ img{
     grid-auto-rows: 200px;
     grid-gap: 20px;
     padding: 50px;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+>>>>>>> main
   }
-
-  .clothes-img {
-    width: 60%;
-    height: 200px;
-    border: 2px solid var(--clothes-border);
+  
+  html {
+    height: 100%;
   }
-}
-
-@media screen and (max-width: 1400px) {
-  .user-login a {
-    font-size: 16px;
+  body {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
-}
-
-@media screen and (max-width: 1230px) {
-  .logo {
-    width: 200px;
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
-
-  .user-login {
-    font-size: 20px;
+  
+  nav {
+    flex: 1;
+    text-align: right;
   }
-
-  .search-txt {
-    width: 220px;
+  nav ul {
+    font-size: 1.3rem;
+    display: inline-block;
+    list-style-type: none;
   }
-
-  .navbar li a {
-    font-size: 15px;
-    margin-left: 10px;
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
   }
-
-  footer a {
-    margin-right: 50px;
-    font-size: 15px;
-  }
-
-  #container a {
-    margin-right: 60px;
-    font-size: 20px;
+  a {
     text-decoration: none;
+    color: #555;
   }
-}
-
-@media screen and (max-width: 1160px) {
-  .box-container {
-    overflow: scroll;
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    grid-auto-rows: 350px;
-    grid-gap: 20px;
-    padding: 50px;
+  
+  figcaption {
+      text-align: center;
   }
-
-  .grid-box {
+  
+  a:hover {
+   color: red;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 40px;
+  }
+  
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+  }
+  
+  .col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+  
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+  }
+  .btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.6s;
+  }
+  
+  /* SLIDER FEATURES*/
+  
+  .slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+  }
+  
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input {
+    display: none;
+  }
+  
+  .slide {
+    width: 20%;
+    transition: 2s;
+  }
+  .slide img {
+    width: 800px;
+    height: 500px;
+  }
+  
+  /* CSS FOR MANUAL SLIDER*/
+  .navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  /*------------------------------------------------*/
+  
+  .btn:hover {
+    background: #563434;
+  }
+  
+  main#main {
+    flex: 1 0 auto;
+    height:100%;
+  }
+  .header {
+    flex: 0 1 auto;
+    background: radial-gradient(#fff, #f8cab8);
+  }
+  .header .row {
+    margin-top: 70px;
+  }
+  .categories {
+    margin: 70px 0;
+  }
+  
+  .col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .col-3 img {
+    width: 100%;
+    height: 370px;
+  }
+  
+  .small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+  
+  .col-4 img {
+    width: 100%;
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+  }
+  
+  .title::after {
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h4 {
+    color: #555;
+    font-weight: normal;
+  }
+  .col-4 p {
+    font-size: 14px;
+  }
+  
+  .col-4:hover {
+    transform: translateY(-15px);
+  }
+  
+  .rating .fa {
+    color: #ff523b;
+  }
+  
+  /*--------------FOOTER PROPERTIES-----*/
+  
+  footer {
+    flex: 0 1 auto;
+    width: 100%;
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+  }
+  
+  footer.p {
+    color: #8a8a8a;
+  }
+  
+  .footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-1 {
+    flex-basis: 30%;
+  }
+  
+  .footer-col-2 {
+    flex: 1;
     text-align: center;
   }
-
-  .clothes-img {
-    width: 60%;
-    height: 350px;
-    border: 2px solid var(--clothes-border);
+  
+  .footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
   }
-}
+  .footer-col-3,
+  .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  .app-logo {
+    margin-top: 20px;
+  }
+  .app-logo img {
+    width: 140px;
+  }
+  
+  .footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  /* CSS FOR REGISTER PAGE-----------> */
+  
+  .form-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .form-container h1 {
+    margin-top: 20px;
+    padding-bottom: 25px;
+  }
+  
+  .form-group .form-input {
+    width: 500px;
+    padding: 10px 8px;
+    margin: 0 0 5px 10px;
+    font-size: 20px;
+  }
+  
+  .form-group input[type="submit"] {
+    width: 500px;
+    padding: 10px 8px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .fieldset {
+    background-color: #141413;
+    padding: 20px;
+    width: 30%;
+  }
+  
+  .regBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #registerBtn {
+      cursor: pointer;
+      background-color: #e0521a;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      padding: 10px 8px;
+      margin: 20px 0 5px 12px;
+      width: 300px;
+  }
+  
+  
+  
+  /* -----------Mens, Womens, Kids   page */
+  
+  
+  #main-clothing-container {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .title {
+      text-align: center;
+      margin: 80px auto 20px;
+  }
+  
+  .clothing-area {
+      width: 65%;
+      height: 80%;
+      margin: -50px auto;
+  }
+  
+  .box-container {
+      overflow-y: scroll;
+      display: grid;
+      grid-template-columns: repeat(3, 3fr);
+      grid-auto-rows: 330px;
+      grid-gap: 20px;
+      padding: 50px;
+      height: 70vh;
+  }
+  
+  
+  .clothes-img {
+      width: 100%;
+      height: 320px;
+      border: 2px solid var(--clothes-border);
+  }
+  
+  .grid-box figcaption {
+      color: var(--clothes-caption);
+      font-size: 12px;
+      margin-bottom: 10px;
+  }
+  
+  .price {
+      font-weight: 700;
+  }
+  
+  
+  /* *************** ABOUT US - CONTACT US - CUSTOMER SERVICE - LEGAL PAGE **************** */
+  #main-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      height: 100vh;
+  }
+  
+  .linked-page {
+      overflow-y: scroll;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 15px 10px 10px #999;
+      width: 70%;
+      height: 70vh;
+      padding: 30px;
+  }
+  
+  .img-logo {
+      background: url('/image/eTrade_logo.png') no-repeat;
+      width: 160px;
+      height: 150px;
+  }
+  
+  .linked-page-us {
+      padding: 30px 50px;
+  }
+  
+  h1,
+  p,
+  h3 {
+      margin-bottom: 20px;
+  }
+  
+  h1,
+  h3 {
+      color: #747474;
+  }
+  
+  p {
+      color: #413f3f;
+      line-height: 1.8;
+  }
+  
+  .back-home {
+      padding-left: 50px;
+      margin-top: 15px;
+  }
+  
+  .back-home a {
+      text-decoration: none;
+      color: #229e8e;
+  }
+  
+  .back-home a:hover {
+      text-decoration: underline;
+      color: #066659;
+  }
+  
+  

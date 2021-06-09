@@ -9,8 +9,7 @@
         {{#each products as |product|}}
         <section class="grid-box">
             <a href=""><img class="clothes-img" src="{{product.image}}" alt=""></a>
-            <figcaption>{{product.name}}</figcaption>
-            <p>Price: {{product.price}} {{product.currency}}</p>
+            <figcaption>{{product.name}} <span class="price">Price: {{product.currency}} {{product.price}} </span></figcaption>
         </section>
         {{/each}}
     </section>

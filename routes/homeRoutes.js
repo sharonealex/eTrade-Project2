@@ -112,6 +112,14 @@ router.get("/clothing-details", (req, res) => {
   res.render('clothing-details');
 });
 
+<<<<<<< HEAD
   
 
 module.exports = router;
+=======
+router.get("/products", (req, res) => {
+  res.render("products");
+});
+
+module.exports = router;
+>>>>>>> main
