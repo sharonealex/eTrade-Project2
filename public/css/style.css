@@ -517,6 +517,10 @@ p {
   color: #066659;
 }
 
+p.register{
+  color: #c83a38;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: );

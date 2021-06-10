@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../../models");
+const { User, Address } = require("../../models");
 const session = require("express-session");
 
 // Get all Users
@@ -23,12 +23,19 @@ router.post("/", async (req, res) => {
       last_name: req.body.last_name,
       phone_number: req.body.phone_number,
     });
+    const userData = createUsers.get({ plain: true });
+    const createAdress = await Address.create({
+      city: req.body.city,
+      address_line1: req.body.address_line1,
+      address_line2: req.body.address_line2,
+      postal_code: req.body.postal_code,
+      user_id: userData['id']
+    });
 
     req.session.save(() => {
       //   req.session.user_id = user.id
       //   req.session.username = user.username;
       req.session.loggedIn = true;
-
       res.status(200).json(createUsers);
     });
   } catch (err) {
