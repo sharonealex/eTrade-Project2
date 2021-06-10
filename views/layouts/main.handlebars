@@ -21,7 +21,7 @@
 
       <section class="navbar">
         <section class="logo">
-          <a href="/eTrade"><img src="/image/eTrade-logo.png"  /></a>
+          <a href="/eTrade"><img src="/image/eTrade-logo.png" /></a>
         </section>
         <nav>
           <ul>
@@ -29,7 +29,16 @@
             <li><a href="/eTrade/Products">Products</a></li>
             <li><a href="/eTrade/about-us">About</a></li>
             <li><a href="/eTrade/contact-us">Contact</a></li>
-            <li><a href="/eTrade/login">Sign In</a></li>
+            <li>
+              <a href="/eTrade/login">
+                {{#if loggedIn}}
+                Log out
+                {{else}}
+                Sign In
+                {{/if}}
+              </a>
+            </li>
+
             <img src="/image/shopping-cart.png" width="30px" height="30px" alt="shopping cart icon" />
           </ul>
         </nav>

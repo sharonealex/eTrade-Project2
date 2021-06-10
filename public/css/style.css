@@ -47,7 +47,7 @@ nav ul li {
 }
 a {
   text-decoration: none;
-  color: #555;
+  color: #000;
 }
 /* ---ADDED LOGO CSS RULES */
 .logo {
@@ -257,8 +257,8 @@ footer {
   padding: 60px 0 20px;
 }
 
-footer.p {
-  color: #fff;
+footer p {
+  color: rgb(216, 216, 216);
 }
 
 .footer h3 {
@@ -343,6 +343,7 @@ ul {
 .flex {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 
 fieldset {
@@ -453,9 +454,8 @@ fieldset {
   margin: 20px 0 5px 0px;
 }
 
-
 .item-details {
-    color: #000;
+  color: #000;
 }
 /* *************** ABOUT US - CONTACT US - CUSTOMER SERVICE - LEGAL PAGE **************** */
 #main-page {
@@ -498,7 +498,7 @@ h3 {
 }
 
 p {
-  color: #fff;
+  color: black;
   line-height: 1.8;
 }
 
@@ -517,10 +517,5 @@ p {
   color: #066659;
 }
 
-p.register{
-  color: #c83a38;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: );
+/* MEDIA QUERIES 
+@media screen and (max-width: ); */
