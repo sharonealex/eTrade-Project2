@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Product, Category } = require("../models");
+const { Product, Category, Cart } = require("../models");
 
 router.get("/", (req, res) => {
   res.render("all", { loggedIn: req.session.loggedIn });
@@ -21,9 +21,9 @@ router.get("/customer-support", (req, res) => {
   res.render("customer-support", { loggedIn: req.session.loggedIn });
 });
 
-// router.get("/track-order", (req, res) => {
-//   res.render("track-order");
-// });
+router.get("/carts", (req, res) => {
+  res.render("cart");
+});
 
 // Mens
 router.get("/mens", async (req, res) => {
@@ -130,5 +130,21 @@ router.get("/clothing-details", (req, res) => {
 router.get("/products", (req, res) => {
   res.render("products", { loggedIn: req.session.loggedIn });
 });
+
+
+router.get("/carts", async (req, res) => {
+    try {
+      const cartsData = await Cart.findAll({
+        where: {
+          user_id,
+        },
+        include: [{ model: user }],
+      });
+      const carts = cartsData.map((item) => item.get({ plain: true }));
+      res.render("carts", { carts, loggedIn: req.session.loggedIn });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 module.exports = router;

@@ -95,6 +95,10 @@ a:hover {
   min-width: 300px;
 }
 
+.left {
+    text-align: center;
+}
+
 .col-2 img {
   max-width: 100%;
   padding: 50px 0;
@@ -393,17 +397,15 @@ fieldset {
   margin: -70px auto;
 }
 
+
 .box-container {
-  width: 90%;
-  /* overflow-y: scroll; */
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  /* grid-auto-rows: 400px; */
-  grid-gap: 10px;
-  padding: 60px;
-  /* height: 70vh; */
-  /* margin-bottom: 100px; */
-}
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 10px;
+    padding: 60px;
+  }
 
 .clothes-img {
   width: 100%;
@@ -517,5 +519,39 @@ p {
   color: #066659;
 }
 
-/* MEDIA QUERIES 
-@media screen and (max-width: ); */
+/* ------ Media Screen --------- */
+@media screen and (max-width: 1543px){
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+    }
+}
+@media screen and (max-width:1400px) {
+    .user-login a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .logo {
+        width: 200px;
+    }
+    .user-login {
+        font-size: 20px;
+    }
+    .search-txt {
+        width: 220px;
+    }
+    .navbar li a {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    footer a {
+        margin-right: 50px;
+        font-size: 15px;
+    }
+    #container a {
+        margin-right: 60px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
