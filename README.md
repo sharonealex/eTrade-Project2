@@ -31,10 +31,11 @@ A mock-up of an eCommerce website using MVC architecture, created by four full s
 
 # Screenshots
 
-_ENTER SCREENSHOTS HERE_
-
-![Screenshot of project](./public/Screenshot.jpeg)
-
+![Etrade-landing-page](https://user-images.githubusercontent.com/14179472/121775535-a7444180-cbcb-11eb-97de-6f8fa6e21e9e.png)
+![eTrade-productsPage](https://user-images.githubusercontent.com/14179472/121775559-d35fc280-cbcb-11eb-8db8-de745f6d93b7.png)
+![eTrade-mens-items](https://user-images.githubusercontent.com/14179472/121775585-00ac7080-cbcc-11eb-8715-fa24cd50583e.png)
+![eTrade-jumper](https://user-images.githubusercontent.com/14179472/121775605-1b7ee500-cbcc-11eb-9941-20aa32ce4817.png)
+![eTrade-signup](https://user-images.githubusercontent.com/14179472/121775636-3b160d80-cbcc-11eb-967a-0f42a8cf64d1.png)
 # Installations
 
 Must have these programs installed on computer to run code:
