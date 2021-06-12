@@ -136,7 +136,7 @@ router.get("/carts", async (req, res) => {
     try {
       const cartsData = await Cart.findAll({
         where: {
-          user_id,
+          user_id: req.body.user_id,
         },
         include: [{ model: user }],
       });
