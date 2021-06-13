@@ -28,6 +28,8 @@ A mock-up of an eCommerce website using MVC architecture, created by four full s
 # Presentation
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1dQHRRxdqLr-S4q3_tMY8gSz93ZV0vmOkr2LO-X0iJOE/edit?usp=sharing)
+
+#Demo Deployment
 https://etrade-project2.herokuapp.com/eTrade
 
 # Screenshots
